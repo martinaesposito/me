@@ -149,6 +149,10 @@ img {
 
 
 @media screen and (max-width: 992px) {
+
+    body,html {
+        overflow: auto;
+    }
   
     #gridprojects{
       width: 100%;
