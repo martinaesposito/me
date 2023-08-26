@@ -9,6 +9,8 @@ img {
 
 span {
     padding-bottom: 1vh;
+    font-size: 0.7em;
+    font-style: oblique;
 }
 
 #projectlist{
@@ -38,6 +40,8 @@ span {
 
     max-width: 95%;
     padding:0%;
+    padding-bottom: 20vh;
+
  }
 
 #projectgallery{
