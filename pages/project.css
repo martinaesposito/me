@@ -1,0 +1,105 @@
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+img { 
+    width:100%;
+}
+
+span {
+    padding-bottom: 1vh;
+}
+
+#projectlist{
+    width: 35%;
+    height: 100vh;
+
+    padding: 0%;
+    padding-top: 10vh;
+
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: auto;
+    
+/*  background-color: aqua; */
+}
+
+#titolo{
+    font-size: 1.8em;
+    padding:0%
+ }
+
+ #anno{
+    padding:1vh 0%;
+ }
+
+ #descrizione{
+
+    max-width: 95%;
+    padding:0%;
+ }
+
+#projectgallery{
+    width: 50%;
+    height: 100vh;
+    overflow-y:auto;
+    
+    border-left: solid 1px black;
+}
+
+#info{
+    padding:0%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height:20vh;
+    
+/*     background-color: aquamarine; */
+}
+
+.infoelement{
+    margin:0;
+    width:100%;
+    
+/*   background-color:chartreuse; */
+}
+
+.galleryelement {
+    margin-top: 1vh;
+}
+
+a{
+    width: fit-content;
+}
+
+@media screen and (max-width : 1024px) {
+  
+   
+#projectgallery{
+    width: 60%;
+    }
+
+    #projectlist{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+      
+    body,html {
+        
+  overflow: auto;
+    }
+    
+#projectgallery{
+    width: 100%;
+    height:auto;
+    }
+
+    #projectlist{
+        width:100%;
+    height:auto;
+    }
+    
+  }
