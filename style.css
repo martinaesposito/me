@@ -77,8 +77,9 @@ div {
 a { 
   color: black;
   padding: 1px;
-  border-bottom: 1px solid black;
   text-decoration: none;
+  border-bottom: solid 1px black;
+  width: fit-content;
 
 }
 
