@@ -94,6 +94,7 @@ a{
     body,html {
         
   overflow: auto;
+  font-size: 1em;
     }
     
 #projectgallery{
@@ -105,5 +106,6 @@ a{
         width:100%;
     height:auto;
     }
+    
     
   }
