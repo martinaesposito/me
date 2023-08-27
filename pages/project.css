@@ -76,6 +76,10 @@ a{
     width: fit-content;
 }
 
+iframe {
+    overflow-clip-margin: auto;
+}
+
 @media screen and (max-width : 1024px) {
   
    
