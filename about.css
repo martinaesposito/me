@@ -1,21 +1,43 @@
 
+html, body{
+    
+    overflow: auto;
+}
+
 #selfp {
+    display: block;
     width: 80%;
     padding: 1vh;
     margin-top:10vh;
 
-    font-size: 36px;
+    font-size: 2.7em;
 /*   background-color:burlywood; */
 }
 
+
+#ciao {
+cursor: url('./assets/manine/ciao_cursor2.png'), auto;
+}
+
+#milan {
+    cursor: url('./assets/manine/milano_cursor.png'), auto;
+}
+#draw {
+    cursor: url('./assets/manine/disegno_cursor.png'), auto;
+}
+
+
 img{
     width:40vh;
+    float: left;
     height:auto;
-
 }
 
-/* a:hover {
-    #milan{
-    cursor: url('./assets/manine/milano.png'), auto;	
-}
-  } */
+#marghe {
+    padding-right: 3vh;
+/*     background: orange; */
+    clip-path: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
+    shape-outside: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
+   }
+
+ù
