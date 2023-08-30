@@ -1,16 +1,18 @@
 
 html, body{
     
-    overflow: auto;
+    overflow: hidden;
 }
 
 #selfp {
     display: block;
-    width: 80%;
-    padding: 1vh;
-    margin-top:10vh;
+    width: 85vw;
+    padding: 10vh 20vh 1vh 1vh;
 
     font-size: 2.7em;
+    
+    overflow: auto;
+    height: 100vh;
 /*   background-color:burlywood; */
 }
 
@@ -40,4 +42,25 @@ img{
     shape-outside: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
    }
 
-ù
+.contacts{
+    font-size: 0.9em;
+}
+
+@media screen and (max-width : 1024px) {
+  
+   
+    #selfp {
+        width: 100vw;
+        padding: 10vh 0vh 1vh 1vh;
+    }
+    }
+    
+    
+    @media screen and (max-width: 600px) {
+          
+        body,html {
+            
+      overflow: auto;
+      font-size: 0.9em;
+        }
+    }

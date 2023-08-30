@@ -1,5 +1,6 @@
 #gridprojects{
-    width: 85%;
+/*     width: 85%; */
+width: 100%;
     height: 100vh;
     box-sizing: border-box;
     
@@ -87,14 +88,17 @@ img {
 }
 
 .numero{
-    position: absolute;
+ /*    position: absolute;
      top: 0;
-    left: 0;
+    left: 0; */
     z-index: 10;
-    text-align: center;
-    width: 100%;
+    text-align: center;/* 
+    width: 100%; */
 }
 
+.item1 img {
+    top:1vh;
+}
 .item3 img {
     top:-2vh;
 }
@@ -112,8 +116,8 @@ img {
 }
 .item9 img {
     top:0vh;
-    width:80%;
-}
+    width:80%; }
+
 
 [class*="overlay"] {
   position: absolute;
@@ -155,8 +159,54 @@ img {
     }
   
     #gridprojects{
-      width: 100%;
+      width: 100vw;
+    height: 200vh;
+
+    gap:1vh;
+      
+      grid-template-areas:
+      ". x1 x1"
+      ". x1 x1"
+      "x3 x3 x3"
+      " . . . "
+      " x5 x5 ."
+      " x5 x5 x2"
+      "x8 x8 x2"
+      "x8 x8 . "
+      "  x9  x9 x9"
+      "  x9 x9 x9"
+      ". . ."
+      ". . ."
+      " . x7 x7 "
+      " . x7 x7 "
+      ". . ."
+      ". x4 x4"
+      ". x4 x4"
+      ". . ."
+      "x6 x6 . "
+      "x6 x6 . ";
+      
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 2fr) repeat(10, 1fr);
+
+    padding:1vh;
+    padding-top:6vh;
+
     }
+
+    
+.item3 img {
+    top:2vh;}
+
+.item9 img {
+    left:20vw;}
+
+    
+
+[class*="overlay"] {
+    display:none;
+ }
+    
     
     }
     
