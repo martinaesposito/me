@@ -41,7 +41,7 @@ span {
     max-width: 95%;
     padding:0%;
     padding-bottom: 20vh;
-
+    display: block;
  }
 
 #projectgallery{
@@ -76,8 +76,14 @@ a{
     width: fit-content;
 }
 
-iframe {
-    overflow-clip-margin: auto;
+iframe {/* 
+    overflow-clip-margin: content-box; */
+    height: 1000px;
+    overflow: auto;
+}
+
+#player {
+    height: 1000px;
 }
 
 @media screen and (max-width : 1024px) {
