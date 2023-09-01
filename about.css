@@ -4,15 +4,21 @@ html, body{
     overflow: hidden;
 }
 
-#selfp {
-    display: block;
+#prescontainer {
+    
     width: 85vw;
-    padding: 10vh 20vh 1vh 1vh;
-
-    font-size: 2.7em;
+    
     
     overflow: auto;
     height: 100vh;
+    display: block;
+
+}
+#selfp {
+    display: block;
+    padding: 10vh 20vh 0vh 0vh;
+
+    font-size: 2.7em;
 /*   background-color:burlywood; */
 }
 
@@ -30,21 +36,20 @@ cursor: url('./assets/manine/ciao_cursor2.png'), auto;
 
 
 img{
-    width:40vh;
+    width:20%;
     float: left;
     height:auto;
 }
 
 #marghe {
-    padding-right: 3vh;
+    float:right;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+/*     padding-right: 3vh; */
 /*     background: orange; */
     clip-path: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
     shape-outside: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
    }
-
-.contacts{
-    font-size: 0.9em;
-}
 
 @media screen and (max-width : 1024px) {
   
