@@ -45,10 +45,11 @@ img{
 }
 
 #marghe {
-    float:right;
+    
     top:20vh;
+/*     float:right;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    transform: scaleX(-1); */
 /*     padding-right: 3vh; */
 /*     background: orange; */
     clip-path: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
@@ -74,8 +75,9 @@ img{
 }
 
     #marghe {
-        width:60vw;
+        width:30vw;
     }
+}
     
     
     @media screen and (max-width: 600px) {
@@ -84,5 +86,9 @@ img{
             
       overflow: auto;
       font-size: 0.9em;
+        }
+
+        #marghe {
+            width:50vw;
         }
     }
