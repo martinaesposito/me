@@ -14,15 +14,19 @@ html, body{
     display: block;
 
 }
-#selfp {
+
+[class*="selfp"]{
     display: block;
-    padding: 10vh 20vh 0vh 0vh;
+    margin:0;
+    padding-right:20vh;
 
     font-size: 2.7em;
 /*   background-color:burlywood; */
 }
 
-
+.selfp1 {
+    padding-top: 10vh;
+}
 #ciao {
 cursor: url('./assets/manine/ciao_cursor2.png'), auto;
 }
@@ -37,12 +41,12 @@ cursor: url('./assets/manine/ciao_cursor2.png'), auto;
 
 img{
     width:20%;
-    float: left;
     height:auto;
 }
 
 #marghe {
     float:right;
+    top:20vh;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 /*     padding-right: 3vh; */
@@ -54,10 +58,23 @@ img{
 @media screen and (max-width : 1024px) {
   
    
-    #selfp {
+    #prescontainer {
         width: 100vw;
-        padding: 10vh 0vh 1vh 1vh;
-    }
+    }[class*="selfp"]{
+    display: block;
+    margin:0;
+    padding-right:20vh;
+
+    font-size: 2.7em;
+/*   background-color:burlywood; */
+}
+
+[class*="selfp"]{
+    padding-right:0vh;
+}
+
+    #marghe {
+        width:60vw;
     }
     
     

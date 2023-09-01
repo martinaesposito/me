@@ -126,21 +126,27 @@ img {
     top:0vh;
     width:80%; }
 
-.info {
+    
+    [class*="info"] {
         display: none;
         position: absolute;
-     }
-
+        }
      
-    [class*="item"]:hover .info {
-       display: block;
-       bottom:-8vh;
+[class*="item"]:hover .info {
+    display: block;
+    bottom:-8vh;
+}
+
+[class*="item"]:hover .numero{
+    display: none;
     }
 
-    [class*="item"]:hover .numero{
-        display: none;
-     }
 
+
+    .info1 {
+        top:0;
+        left:-50vh;
+    }
 
 
 [class*="overlay"] {
