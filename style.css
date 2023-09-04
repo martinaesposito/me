@@ -130,9 +130,16 @@ margin:0 1vh;
 
   .nav{
     margin:1vh 1vh;
+    font-size: 0.8rem;
   }
+
   #works {
     padding-right: 1vh;
+  }
+  #contacts {
+    box-sizing: border-box;
+    text-align: center;
+    width:100vw;
   }
 
 }
