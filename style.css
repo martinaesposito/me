@@ -5,10 +5,11 @@ html, body {
   margin: 0;
   padding: 0;
   position: relative;
+
+  background-color: #fff;
   
-/*   font-family: sans-serif; */
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   
   overflow: hidden;
 }
@@ -26,11 +27,37 @@ div {
   padding: 1vh;
 }
 
+
+a { 
+
+  color: black;
+  border-bottom: solid 1px black;
+  padding: 1px;
+  text-decoration: none;
+  width: fit-content;
+}
+
 /* ELEMENTI NAVIGAZIONE IN ALTO */
 
 .nav{
-  z-index: 1;
+  font-weight: 100;
+  background-color: transparent;
+  white-space: nowrap;
+  color: #fff;
+  
+  mix-blend-mode: difference;
+
+  z-index: 10;
   position: fixed;
+  margin:1vh 0;
+
+  font-size: 0.9rem;
+}
+
+.nav a {
+  color: #fff;
+  border-bottom: solid 1px white;
+  mix-blend-mode: difference;
 }
 
 #io {
@@ -78,18 +105,8 @@ margin:0 1vh;
 .listanno{
   padding-top: 4vh;
   font-style: oblique;
-  font-size: 0.7em;
+  font-size: 0.7rem;
 /*   border-bottom: solid 1px black; */
-}
-
-
-a { 
-  color: black;
-  padding: 1px;
-  text-decoration: none;
-  border-bottom: solid 1px black;
-  width: fit-content;
-
 }
 
 
@@ -98,15 +115,24 @@ a {
 #list{
   display: none;
 }
+#works {
+  padding-right: 2vh;
+}
 
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
       
   #list{
     display: none;
   }
 
+  .nav{
+    margin:1vh 1vh;
+  }
+  #works {
+    padding-right: 1vh;
+  }
 
 }

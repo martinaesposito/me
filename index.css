@@ -48,6 +48,8 @@
 /*     max-height:20vh; */
     
     position: relative;
+    
+  mix-blend-mode:normal;
 }
 
 .item1 {
@@ -114,6 +116,7 @@ img {
     top:-6vh;
     width:85%;
 }
+
 .item7 img {
     width:70%;
 }
@@ -156,6 +159,7 @@ img {
   width: 90%;
   height: auto;
   z-index:2;
+  display: none;
 /* 
   background-size: cover;
   background-position:center;
@@ -163,10 +167,21 @@ img {
   
 }
 
+.gif {
+    display: none;
+}
 
 [class*="item"]:hover .overlay{
     display: none;
  }
+
+ [class*="item"]:hover .gif{
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: auto;
+    z-index: 2;
+    }
 
 /* .overlay2 {
     -webkit-mask-image: url("/assets/home/mask/brutmask.png")center center / cover;
@@ -182,7 +197,16 @@ img {
     width: 90%;
 } */
 
+@media screen and (max-width: 1024px) {
 
+    #gridprojects{
+        width: 100vw;
+      height: 100vh;
+  overflow: scroll;
+  padding-right: 0;
+      }
+
+}
 @media screen and (max-width: 768px) {
 
     body,html {
@@ -190,8 +214,7 @@ img {
     }
   
     #gridprojects{
-      width: 100vw;
-    height: 200vh;
+    height: 600vh;
 
     gap:1vh;
       
@@ -221,10 +244,12 @@ img {
     grid-template-rows: repeat(10, 2fr) repeat(10, 1fr);
 
     padding:1vh;
-    padding-top:6vh;
+    
+  padding: 10vh 0;
+  
+  padding-bottom: 20vh;
 
     }
-
     
 .item3 img {
     top:2vh;}
@@ -232,12 +257,16 @@ img {
 .item9 img {
     left:20vw;}
 
-    
-
 [class*="overlay"] {
     display:none;
  }
-    
-    
     }
     
+    @media screen and (max-width: 600px) {
+      
+        #gridprojects{
+        height: 450vh;
+    
+    
+        }
+    }
