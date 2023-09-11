@@ -7,14 +7,14 @@
 /*     gap: 2vh; */
 
     grid-template-areas:
-        "x2 x2 . . x1 x1 x7 x7"
-        "x2 x2 . . x1 x1 x7 x7 "
-        "x3 x3 x6 x6 x5 x5 . ."
-        "x3 x3 x6 x6 x5 x5 . . "
-        ". . x4 x4 x9 x9 x8 x8"
-        ". . x4 x4 x9 x9 x8 x8";
+        "x2 x2 . . . . x1 x1 x7 x7 . ."
+        "x2 x2 . . . . x1 x1 x7 x7 . ."
+        "x3 x3 x6 x6 x5 x5 . . . . . ."
+        "x3 x3 x6 x6 x5 x5 . . . . . ."
+        ". . x4 x4 . . . .x9 x9 x8 x8"
+        ". . x4 x4 . . . .x9 x9 x8 x8";
 
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
 
     overflow: auto;
@@ -23,7 +23,7 @@
 [class*="item"] {
     justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 30%;
     position: relative;
 }
 
@@ -68,9 +68,9 @@ img {
 /*     position: absolute;
 display: block; */
     height: auto;
-    width:auto;
-    max-height: 100%;
-    max-width: 100%;
+    width:100%;
+    /* max-height: 100%; */
+    /* max-width: 100%; */
     z-index: 0;
 }
 
@@ -119,10 +119,10 @@ display: block; */
 .gif {
     display: none;
 }
-
+/* 
 [class*="item"]:hover img {
     display: none;
-}
+} */
 
 [class*="item"]:hover .gif {
     display: block;
