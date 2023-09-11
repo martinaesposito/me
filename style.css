@@ -9,9 +9,10 @@ html, body {
   background-color: #fff;
   
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -26,10 +27,11 @@ div {
   box-sizing: border-box;
   padding: 1vh;
 }
-
+p{
+  margin:0;
+}
 
 a { 
-
   color: black;
   border-bottom: solid 1px black;
   padding: 1px;
@@ -38,14 +40,13 @@ a {
 }
 
 /* ELEMENTI NAVIGAZIONE IN ALTO */
-
 .nav{
   font-weight: 100;
   background-color: transparent;
   white-space: nowrap;
   color: #fff;
   
-  mix-blend-mode: difference;
+  mix-blend-mode:exclusion;
 
   z-index: 10;
   position: fixed;
@@ -71,22 +72,19 @@ a {
   text-align: right;
 }
 
-#contacts {
-  bottom:0;
-/*   right:0;
-  padding-right: 1vh;
-  text-align: right; */
-  padding-left: 1vh;
-}
-.contacts{
-margin:0 1vh;
+#mail{
+  bottom:1vh;
+  right:1vh;
+  text-align: right;
+  border-bottom: solid 1px white;
+/*   padding-right: 1vh; */
 }
 
  
 #list{
   padding-top:10vh;
   overflow: hidden;
-  width: 15%;
+  width: 25%;
   height: 100vh;
   
   border-left: solid 1px black;
@@ -95,7 +93,7 @@ margin:0 1vh;
 }
 
 
-.listelement{
+/* .listelement{
   width:100%;
   position: relative;
   padding-top: 1vh;
@@ -106,7 +104,14 @@ margin:0 1vh;
   padding-top: 4vh;
   font-style: oblique;
   font-size: 0.7rem;
-/*   border-bottom: solid 1px black; */
+/*   border-bottom: solid 1px black;
+}
+ */
+ 
+.titlObl {
+  padding-bottom: 1vh;
+  font-style: oblique;
+  font-size: 0.75rem;
 }
 
 
@@ -119,27 +124,43 @@ margin:0 1vh;
   padding-right: 2vh;
 }
 
+#mail{
+  bottom:1vh;
+ /*  right:0; */
+  margin:0 auto;
+  text-align: center;
+  border-bottom: solid 1px white;
+/*   padding-right: 1vh; */
+}
+
 }
 
 
 @media screen and (max-width: 768px) {
       
+
+  html{
+overflow:hidden;
+  }
+
   #list{
     display: none;
   }
-
+/* 
   .nav{
-    margin:1vh 1vh;
-    font-size: 0.8rem;
-  }
+    margin:0.5vh 0.5vh;
+  } */
 
   #works {
     padding-right: 1vh;
   }
-  #contacts {
+  
+
+  #mail{
     box-sizing: border-box;
     text-align: center;
-    width:100vw;
+    margin:auto;
+   /*  width:100vw; */
   }
 
 }

@@ -1,33 +1,58 @@
 
 html, body{
-    
     overflow: hidden;
+    
+    z-index:-2;
+}
+
+canvas{
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
 }
 
 #prescontainer {
-    
-    width: 85vw;
-    
-    
+
+    width: 75vw;
+
     overflow: auto;
     height: 100vh;
     display: block;
 
+    padding-right:10vh;
+    /*     background-color: black;
+    color: white; */
+
 }
 
-[class*="selfp"]{
-    display: block;
-    margin:0;
-    padding-right:20vh;
-    width:auto;
-
-    font-size: 2.4rem;
-/*   background-color:burlywood; */
+[class*="selfp"] {
+    margin: 0;
+    font-size: 2.25rem;
+    line-height:3rem;
 }
 
-.selfp1 {
-    padding-top: 10vh;
+.padtop {
+    margin-top: 7.5vh; 
 }
+.padtop1 {
+    margin-top: 10vh; 
+}
+
+/* p.selfp{
+/*     display:block; */
+/*     padding-right:10vh; */
+/*     width:auto; 
+
+
+a {     display:inline-block;
+    max-width: fit-content;
+padding-right: 0;}
+/*
+
+ 
+;
 #ciao {
 cursor: url('./assets/manine/ciao_cursor2.png'), auto;
 }
@@ -37,61 +62,74 @@ cursor: url('./assets/manine/ciao_cursor2.png'), auto;
 }
 #draw {
     cursor: url('./assets/manine/disegno_cursor.png'), auto;
-}
+} */
 
 
-img{
-    width:20%;
-    height:auto;
+img {
+    width: 30%;
+    height: auto;
 }
 
 #marghe {
-    
-    top:20vh;
-    float:right;
-/*     padding-right: 3vh; */
-/*     background: orange; */
+
+    float: left;
+    margin-top: 5vh;
+    margin-right: 5vh;
+    /*     background: orange; */
     clip-path: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
     shape-outside: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
+    /* transform: scaleX(-1); */
+}
 
-    
-    -webkit-transform: scaleX(-1);
+#draw {
+    float: right;
+    width: 28%;
     transform: scaleX(-1);
-   }
+}
+
+
+#list {
+    overflow-wrap: break-word;
+    width: 25%;
+}
+
+
+
 
 @media screen and (max-width : 1024px) {
-  
-   
+
+
     #prescontainer {
         width: 100vw;
-    }[class*="selfp"]{
-    display: block;
-    margin:0;
-    padding-right:20vh;
-
-    font-size: 2.7rem;
-/*   background-color:burlywood; */
-}
-
-[class*="selfp"]{
-    padding-right:0vh;
-}
-
-    #marghe {
-        width:30vw;
+        
+         padding-right:1vh;
     }
 }
-    
-    
-    @media screen and (max-width:768px) {
-          
-        body,html {
-            
-      overflow: auto;
-      font-size: 0.9rem;
-        }
 
-        #marghe {
-            width:50vw;
-        }
+
+@media screen and (max-width:768px) {
+
+
+    [class*="selfp"] {
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
+
+    .padtop {
+        margin-top: 2.5vh; 
+    }
+    .padtop1 {
+        margin-top: 7.5vh; }
+
+    #marghe{ 
+    margin-top: 2.5vh;
+    margin-right: 2.5vh;
+    
+    width: 50%;
+    margin-left:-1vh;
+    }
+
+ /*    #prescontainer {
+        margin: auto 0;
+    } */
+}

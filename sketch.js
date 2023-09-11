@@ -1,7 +1,9 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
+  background("white");
 }
 
-function draw() {
-  background(255);
-}
+function touchMoved (){
+  touchPos= {x:mouseX, y:mouseY}
+  //console.log(touchPos);
+  }
