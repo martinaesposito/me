@@ -24,6 +24,7 @@ snglLet.forEach((l) => {
         l.style.color = coolors[Math.floor(Math.random() * (6 - 0) + 0)]
         l.style.display = "inline-block" 
         l.style.transform = "translate(" + Math.floor(Math.random() * (20 - (-20)) - 20) + "px, " + Math.floor(Math.random() * (20 - (-20)) - 20) + "px)";
+        l.style.animation = "ease 3s" ;
      /*    console.log(l)
  */
         setTimeout(function(){
@@ -32,6 +33,8 @@ snglLet.forEach((l) => {
     })
 })
 
+
+let touchPoss= [];
 
 document.addEventListener("touchmove", (e) => {
 
@@ -42,9 +45,13 @@ document.addEventListener("touchmove", (e) => {
         const disty = Math.abs(Math.floor(touchPos.y - elPos.y));
   
         if (distx<= 20 && disty <= 20 ) { // Controlla se la differenza in x è almeno 20 pixel
+          /* touchPoss.push(l)
+          console.log(touchPoss) */
           l.style.color = coolors[Math.floor(Math.random() * (6 - 0) + 0)];
           l.style.display = "inline-block";
           l.style.transform = "translate(" + Math.floor(Math.random() * (20 - (-20)) - 20) + "px, " + Math.floor(Math.random() * (20 - (-20)) - 20) + "px)";
+          l.style.animation = "ease 3s" ;
+
         }
   
         setTimeout(function () {

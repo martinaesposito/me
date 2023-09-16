@@ -16,6 +16,9 @@ canvas{
 #prescontainer {
 
     width: 75vw;
+   /*  
+    background-color: black;
+    color: white; */
 
     overflow: auto;
     height: 100vh;
