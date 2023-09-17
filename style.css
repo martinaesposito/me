@@ -27,7 +27,8 @@ div {
   box-sizing: border-box;
   padding: 1vh;
 }
-p{
+
+p {
   margin:0;
 }
 
@@ -39,23 +40,31 @@ a {
   width: fit-content;
 }
 
+img {
+  width:100%;
+  height:auto;
+}
+
 /* ELEMENTI NAVIGAZIONE IN ALTO */
-.nav{
+.nav {
   font-weight: 100;
   background-color: transparent;
   white-space: nowrap;
   color: #fff;
   
-  mix-blend-mode:exclusion;
+  mix-blend-mode:difference;
+
+  vertical-align: baseline;
 
   z-index: 10;
   position: fixed;
   margin:1vh 0;
 
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .nav a {
+
   color: #fff;
   border-bottom: solid 1px white;
   mix-blend-mode: difference;

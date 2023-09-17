@@ -1,5 +1,8 @@
 
 
+
+
+
 //TESTO COLORATO
 let coolors = ["#FF9900", "#FF4E4E", "#FF7DBC", "#7DA2FF", "#FFD37D", "#62D282", "#4251D6"];
 let allText = document.querySelectorAll(".selfp"); //prendo tutti i paragrafi della descrizione
@@ -34,6 +37,19 @@ snglLet.forEach((l) => {
 })
 
 
+//creo una canva di p5 in background così da poter adoperare la posizione del mouse rispetto alla canva per far muovere le
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background("white");
+}
+
+function touchMoved (){
+  touchPos= {x:mouseX, y:mouseY}
+  //console.log(touchPos);
+  }
+
+  
+let touchPos
 let touchPoss= [];
 
 document.addEventListener("touchmove", (e) => {

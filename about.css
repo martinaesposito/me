@@ -32,8 +32,9 @@ canvas{
 
 [class*="selfp"] {
     margin: 0;
-    font-size: 1.75rem;
-    line-height:2.25rem;
+    font-size: 2.25rem;
+    line-height:2.75rem;
+    font-weight: 400;
 }
 
 .padtop {
@@ -69,7 +70,7 @@ cursor: url('./assets/manine/ciao_cursor2.png'), auto;
 
 
 img {
-    width: 30%;
+    width: 25%;
     height: auto;
 }
 

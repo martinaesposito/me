@@ -16,7 +16,6 @@ console.log(allImages)
 }) */
 
 
-
     allImages.forEach((l) => {
         console.log(l)
         l.addEventListener("mouseenter", (e) => {
@@ -30,11 +29,10 @@ console.log(allImages)
 
         projImages= document.getElementsByClassName(elementCLass)
 
-        for(i=0; i<projImages.length; i++){
+        for(let i=0; i<projImages.length; i++){
 
             projImages[i].style.opacity = "100%"
         }
-
 
     })
         
@@ -43,3 +41,31 @@ console.log(allImages)
     })
 
     })
+
+/* 
+let columnNodelist    = document.getElementById("line1");
+let columns=  Array.from(columnNodelist )
+
+    columns. forEach((l) => {
+        
+        l.addEventListener("mousewheel", (event) => {
+       event.preventDefault();
+       const deltaY = event.deltaY;
+       l.scrollTop += deltaY * 0.03;
+    })
+}) */
+/* 
+
+ */
+
+/* $(document).ready(function(){ 
+    $(window).scroll(function(){
+        $('.column-reverse').css('transform', 'translate3d(0,' + $(this).scrollTop()*2 + 'px, 0)'); 
+     }).scroll();
+  });  
+ */
+  $(window).on('scroll',function(){
+    $("div[class^='line'").css('bottom',$(window).scrollTop());
+    $(".column-reverse").css('bottom',$(window).scrollTop()*-1);
+    
+});
