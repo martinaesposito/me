@@ -84,6 +84,7 @@ img {
     shape-outside: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
 
     float: right;
+    margin-top:2.5vh;
     transform: scaleX(-1);
     
     margin-right:-10vh;
@@ -111,6 +112,9 @@ img {
         width: 100vw;
         
          padding-right:1vh;
+         font-size: 1.75rem;
+         line-height: 2.5rem;
+         padding-bottom:5vh;
     }
 
     #marghe{
@@ -122,14 +126,14 @@ img {
 
 @media screen and (max-width:768px) {
 
-
+/* 
     [class*="selfp"] {
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
+        /* font-size: 1.75rem; 
+        
+    } */
 
     .padtop {
-        margin-top: 2.5vh; 
+        margin-top: 5vh; 
     }
     .padtop1 {
         margin-top: 7.5vh; }
@@ -140,6 +144,9 @@ img {
     
     width: 40vw;
     /* margin-left:-1vh; */
+    }
+    #prescontainer{
+       
     }
 
  /*    #prescontainer {
