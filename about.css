@@ -1,47 +1,45 @@
+html,
+body {
+  overflow: hidden;
 
-html, body{
-    overflow: hidden;
-    
-    z-index:-2;
+  z-index: -2;
 }
 
-canvas{
-    display:block;
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:-1;
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 #prescontainer {
+  width: 75vw;
 
-    width: 75vw;
-   /*  
-    background-color: black;
+  overflow: auto;
+  height: 100vh;
+  display: block;
+
+  padding: 1vw;
+  padding-right: 10vw;
+
+  /*     background-color: black;
     color: white; */
-
-    overflow: auto;
-    height: 100vh;
-    display: block;
-
-    padding-right:10vh;
-    /*     background-color: black;
-    color: white; */
-
 }
 
 [class*="selfp"] {
-    margin: 0;
-    font-size: 2.25rem;
-    line-height:2.75rem;
-    font-weight: 400;
+  margin: 0;
+  font-size: 32px;
+  line-height: 2.75rem;
+  font-weight: 400;
+  font-family: "IBM Plex Serif", serif;
 }
 
 .padtop {
-    margin-top: 7.5vh; 
+  margin-top: 7.5vh;
 }
 .padtop1 {
-    margin-top: 10vh; 
+  margin-top: 10vh;
 }
 
 /* p.selfp{
@@ -68,88 +66,92 @@ cursor: url('./assets/manine/ciao_cursor2.png'), auto;
     cursor: url('./assets/manine/disegno_cursor.png'), auto;
 } */
 
-
 img {
-    width: 25%;
-    height: auto;
+  width: 22%;
+  height: auto;
 }
 
 #marghe {
+  position: absolute;
 
-    /* float: left;
-    margin-top: 5vh;
-    margin-right: 5vh; */
-    /*     background: orange; */
-    clip-path: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
-    shape-outside: polygon(0 100%, 8% 95%, 43% 55%, 73% 63%, 89% 71%, 100% 33%, 100% 0, 78% 0, 65% 15%, 33% 24%, 0 45%);
+  transform: scaleX(-1);
+  bottom: 7.5vh;
+  right: 0;
 
-    float: right;
-    margin-top:2.5vh;
-    transform: scaleX(-1);
-    
-    margin-right:-10vh;
+  clip-path: polygon(
+    0 100%,
+    8% 95%,
+    43% 55%,
+    73% 63%,
+    89% 71%,
+    100% 33%,
+    100% 0,
+    78% 0,
+    65% 15%,
+    33% 24%,
+    0 45%
+  );
+  shape-outside: polygon(
+    0 100%,
+    8% 95%,
+    43% 55%,
+    73% 63%,
+    89% 71%,
+    100% 33%,
+    100% 0,
+    78% 0,
+    65% 15%,
+    33% 24%,
+    0 45%
+  );
+
+  /* background-color: aqua; */
 }
 
-#draw {
-    float: right;
-    width: 28%;
-    transform: scaleX(-1);
+#contact {
+  margin-top: 10vh;
+  overflow-wrap: break-word;
+  width: 25%;
 }
 
+@media screen and (max-width: 1024px) {
+  #prescontainer {
+    width: 100vw;
 
-#list {
-    overflow-wrap: break-word;
-    width: 25%;
+    padding-right: 1vh;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    padding-bottom: 5vh;
+  }
+
+  #marghe {
+    margin-right: -1vh;
+  }
 }
 
-
-
-
-@media screen and (max-width : 1024px) {
-
-
-    #prescontainer {
-        width: 100vw;
-        
-         padding-right:1vh;
-         font-size: 1.75rem;
-         line-height: 2.5rem;
-         padding-bottom:5vh;
-    }
-
-    #marghe{
-        
-    margin-right:-1vh;
-    }
-}
-
-
-@media screen and (max-width:768px) {
-
-/* 
+@media screen and (max-width: 768px) {
+  /* 
     [class*="selfp"] {
         /* font-size: 1.75rem; 
         
     } */
 
-    .padtop {
-        margin-top: 5vh; 
-    }
-    .padtop1 {
-        margin-top: 7.5vh; }
+  .padtop {
+    margin-top: 5vh;
+  }
+  .padtop1 {
+    margin-top: 7.5vh;
+  }
 
-    #marghe{ 
+  #marghe {
     /* margin-top: 2.5vh; */
     /* margin-right: 2.5vh; */
-    
+
     width: 40vw;
     /* margin-left:-1vh; */
-    }
-    #prescontainer{
-       
-    }
+  }
 
- /*    #prescontainer {
+  /*    #prescontainer {
         margin: auto 0;
     } */
 }
