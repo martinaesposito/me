@@ -20,6 +20,7 @@ canvas {
 }
 
 [class*="selfp"] {
+  word-break: break-word;
   margin: 0;
   font-size: 32px;
   line-height: 2.75rem;
@@ -102,11 +103,6 @@ img {
 /* /////////////////////////////////// */
 
 @media screen and (max-width: 1024px) {
-  html,
-  body {
-    overflow-y: scroll;
-  }
-
   #prescontainer {
     width: 100vw;
     padding: 0 2.5vw 5vh 2.5vw;
@@ -114,7 +110,7 @@ img {
   }
 
   .padtop {
-    margin-top: 5vh;
+    margin-top: 4vh;
   }
   .padtop1 {
     margin-top: 10vh;
@@ -136,10 +132,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    display: none;
-  }
-
   #prescontainer {
     padding: 0 2.5vw 5vh 5vw;
     height: auto;

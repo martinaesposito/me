@@ -51,7 +51,6 @@ img {
   background-color: transparent;
   white-space: nowrap;
   color: #fff;
-
   mix-blend-mode: difference;
 
   vertical-align: baseline;
@@ -60,14 +59,7 @@ img {
   position: fixed;
 
   font-family: "IBM Plex Serif", serif;
-  font-weight: 350;
 }
-/* 
-.nav a {
-  color: #fff;
-  border-bottom: solid 1px white;
-  mix-blend-mode: difference;
-} */
 
 #works {
   right: 0;
@@ -102,7 +94,19 @@ img {
 /* ////////////////////////// */
 
 @media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 18px;
+    overflow-y: scroll;
+  }
+
   .nav {
-    padding: 2.5vw;
+    padding: 1vw 2.5vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
   }
 }
