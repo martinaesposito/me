@@ -107,7 +107,7 @@ img {
 @media screen and (max-width: 1024px) {
   #prescontainer {
     width: 100vw;
-    padding: 0 2.5vw 5vh 2.5vw;
+    padding: 0 2.75vw 5vh 2.75vw;
     height: auto;
   }
 
