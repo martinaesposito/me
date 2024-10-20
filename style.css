@@ -34,6 +34,7 @@ div {
 }
 
 a {
+  display: block;
   color: black;
   border-bottom: solid 1px black;
   padding: 1px;
@@ -67,14 +68,6 @@ img {
   text-align: right;
 }
 
-/* #mail {
-  bottom: 1vh;
-  right: 1vh;
-  text-align: right;
-  border-bottom: solid 1px white;
-  padding-right: 1vh;
-} */
-
 #list {
   padding-top: 10vh;
   overflow: hidden;
@@ -85,12 +78,6 @@ img {
 
   /*  background-color:burlywood; */
 }
-
-/* .titlObl {
-  padding-bottom: 1vh;
-  font-style: oblique;
-  font-size: 0.75rem;
-} */
 
 /* ////////////////////////// */
 
