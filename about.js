@@ -12,15 +12,21 @@ let coolors = [
 let allText = document.querySelectorAll(".selfp"); //prendo tutti i paragrafi della descrizione
 
 allText.forEach((txt) => {
-  //FUNZIONE CHE SPEZZA IL
-  let strTxt = txt.textContent; //prendo il contenuto del testo
-  let splitTxt = strTxt.split(""); //creo un array con tutte le parole
+  let strTxt = txt.textContent; // prendo il contenuto del testo
+  let splitTxt = strTxt.split(""); // creo un array con tutte le lettere (inclusi gli spazi)
 
-  txt.textContent = "";
+  txt.textContent = ""; // Svuoto il contenuto del testo
 
-  for (let i = 0; i < splitTxt.length; i++) {
-    txt.innerHTML += "<span>" + splitTxt[i] + "</span>";
-  }
+  splitTxt.forEach((char) => {
+    // Verifica se il carattere è uno spazio
+    if (char === " ") {
+      txt.innerHTML += " "; // Aggiungi uno spazio normale (non racchiuso in <span>)
+    } else {
+      let span = document.createElement("span");
+      span.textContent = char;
+      txt.appendChild(span); // Aggiungi le altre lettere racchiuse in <span>
+    }
+  });
 });
 
 let snglLet = document.querySelectorAll("span"); //select the single letter;
@@ -61,74 +67,27 @@ let touchPoss = [];
 
 document.addEventListener("touchmove", (e) => {
   snglLet.forEach((l) => {
-    const elPos = l.getBoundingClientRect(); //calcolo la posizione dell'elemento
-    //calcolo la differenza rispetto alla posizione del mouse rilevata tramite la canva di p5js
-    const distx = Math.abs(Math.floor(touchPos.x - elPos.x));
-    const disty = Math.abs(Math.floor(touchPos.y - elPos.y));
+    const elPos = l.getBoundingClientRect(); // calcolo la posizione dell'elemento
+    const distx = Math.abs(Math.floor(touchPos.x - elPos.x)); // distanza x rispetto alla posizione del touch
+    const disty = Math.abs(Math.floor(touchPos.y - elPos.y)); // distanza y rispetto alla posizione del touch
 
     if (distx <= 20 && disty <= 20) {
-      // Controlla se la differenza in x è almeno 20 pixel
-      /* touchPoss.push(l)
-          console.log(touchPoss) */
-      l.style.color = coolors[Math.floor(Math.random() * (6 - 0) + 0)];
+      // Se la distanza in x e y è inferiore a 20px
+      l.style.color = coolors[Math.floor(Math.random() * coolors.length)];
       l.style.display = "inline-block";
-      l.style.transform =
-        "translate(" +
-        Math.floor(Math.random() * (20 - -20) - 20) +
-        "px, " +
-        Math.floor(Math.random() * (20 - -20) - 20) +
-        "px)";
-      l.style.animation = "ease 3s";
-    }
+      l.style.transform = `translate(${Math.floor(
+        Math.random() * 40 - 20
+      )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
 
-    setTimeout(function () {
-      l.removeAttribute("style");
-    }, 1000);
+      // Lascia la trasformazione attiva per 1 secondo dopo la fine del tocco
+      clearTimeout(l.timeout); // Cancella qualsiasi timeout precedente per questo elemento
+      l.timeout = setTimeout(() => {
+        l.style.transform = "translate(0, 0)"; // Ritorna alla posizione originale
+        l.style.color = ""; // Ripristina il colore originale
+      }, 1000); // Aspetta 1 secondo prima di resettare lo stile
+    }
   });
 });
-
-document.addEventListener("touchmove", (e) => {
-  /* for (let i = 0; i < e.changedTouches.length; i++) {
-          tcPos = { x: e.changedTouches[i].screenX, y: e.changedTouches[i].screenY };
-          console.log("touches", tcPos); */
-
-  snglLet.forEach((l) => {
-    const elPos = l.getBoundingClientRect();
-    const distx = Math.abs(Math.floor(touchPos.x - elPos.x));
-    const disty = Math.abs(Math.floor(touchPos.y - elPos.y));
-    /* console.log(distx, disty); */
-
-    if (distx <= 20 && disty <= 20) {
-      // Controlla se la differenza in x è almeno 10 pixel
-      l.style.color = coolors[Math.floor(Math.random() * (6 - 0) + 0)];
-      l.style.display = "inline-block";
-      l.style.transform =
-        "translate(" +
-        Math.floor(Math.random() * (20 - -20) - 20) +
-        "px, " +
-        Math.floor(Math.random() * (20 - -20) - 20) +
-        "px)";
-    }
-
-    setTimeout(function () {
-      l.removeAttribute("style");
-    }, 1000);
-  });
-  /*     } */
-}); /*
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* document.addEventListener("touchmove", (e) => {
 
