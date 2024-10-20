@@ -153,9 +153,7 @@ snglLet.forEach((l) => {
 
         });
     }) */
-}
-
-,100) */
+/* },100) */
 
 /*  console.log(touchPos.x,touchPos.y)
         console.log(l)
