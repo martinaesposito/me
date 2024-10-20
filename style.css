@@ -47,7 +47,7 @@ img {
 
 /* ELEMENTI NAVIGAZIONE IN ALTO */
 .nav {
-  font-weight: 100;
+  padding: 0 1.75vw;
   background-color: transparent;
   white-space: nowrap;
   color: #fff;
