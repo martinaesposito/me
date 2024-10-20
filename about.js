@@ -8,9 +8,11 @@ let coolors = [
   "#62D282",
   "#4251D6",
 ];
+
 let allText = document.querySelectorAll(".selfp"); //prendo tutti i paragrafi della descrizione
 
 allText.forEach((txt) => {
+  //FUNZIONE CHE SPEZZA IL
   let strTxt = txt.textContent; //prendo il contenuto del testo
   let splitTxt = strTxt.split(""); //creo un array con tutte le parole
 
@@ -83,16 +85,7 @@ document.addEventListener("touchmove", (e) => {
       l.removeAttribute("style");
     }, 1000);
   });
-  /*     } */
 });
-
-/*    l.addEventListener("mouseleave", () => {
-        setTimeout((() => { 
-            l.style.display = "inline-block" 
-            l.style.color = "black" 
-            l.style.transform = "translate(0, 0)";
-        }), 1000)
-    }) */
 
 document.addEventListener("touchmove", (e) => {
   /* for (let i = 0; i < e.changedTouches.length; i++) {
@@ -123,6 +116,19 @@ document.addEventListener("touchmove", (e) => {
   });
   /*     } */
 }); /*
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* document.addEventListener("touchmove", (e) => {
 

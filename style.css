@@ -58,37 +58,29 @@ img {
 
   z-index: 10;
   position: fixed;
-  margin: 1vw;
 
   font-family: "IBM Plex Serif", serif;
   font-weight: 350;
 }
 /* 
 .nav a {
-
   color: #fff;
   border-bottom: solid 1px white;
   mix-blend-mode: difference;
 } */
 
-#io {
-  padding-left: 1vh;
-}
-
 #works {
-  padding-right: 1vh;
   right: 0;
-
   text-align: right;
 }
 
-#mail {
+/* #mail {
   bottom: 1vh;
   right: 1vh;
   text-align: right;
   border-bottom: solid 1px white;
-  /*   padding-right: 1vh; */
-}
+  padding-right: 1vh;
+} */
 
 #list {
   padding-top: 10vh;
@@ -101,51 +93,16 @@ img {
   /*  background-color:burlywood; */
 }
 
-.titlObl {
+/* .titlObl {
   padding-bottom: 1vh;
   font-style: oblique;
   font-size: 0.75rem;
-}
+} */
 
-@media screen and (max-width: 992px) {
-  #list {
-    display: none;
-  }
-  #works {
-    padding-right: 2vh;
-  }
+/* ////////////////////////// */
 
-  #mail {
-    bottom: 1vh;
-    /*  right:0; */
-    margin: 0 auto;
-    text-align: center;
-    border-bottom: solid 1px white;
-    /*   padding-right: 1vh; */
-  }
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    overflow: hidden;
-  }
-
-  #list {
-    display: none;
-  }
-  /* 
-  .nav{
-    margin:0.5vh 0.5vh;
-  } */
-
-  #works {
-    padding-right: 1vh;
-  }
-
-  #mail {
-    box-sizing: border-box;
-    text-align: center;
-    margin: auto;
-    /*  width:100vw; */
+@media screen and (max-width: 1024px) {
+  .nav {
+    padding: 2.5vw;
   }
 }
