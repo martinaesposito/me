@@ -20,7 +20,7 @@ canvas {
 }
 
 [class*="selfp"] {
-  word-break: break-word;
+  word-break: normal;
   margin: 0;
   font-size: 32px;
   line-height: 2.75rem;
