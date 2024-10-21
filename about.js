@@ -38,9 +38,9 @@ snglLet.forEach((l) => {
     l.style.display = "inline-block";
     l.style.transform =
       "translate(" +
-      Math.floor(Math.random() * (20 - -20) - 20) +
+      Math.floor(Math.random() * (30 - -30) - 30) +
       "px, " +
-      Math.floor(Math.random() * (20 - -20) - 20) +
+      Math.floor(Math.random() * (30 - -30) - 30) +
       "px)";
     l.style.animation = "ease 3s";
     /*    console.log(l)
