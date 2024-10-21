@@ -17,6 +17,7 @@ body {
   font-family: "IBM Plex Serif", serif;
   font-size: 16px;
 
+  overscroll-behavior: contain;
   overflow: hidden;
   overflow-x: hidden;
 }
