@@ -14,7 +14,7 @@ body {
   background-color: #fff;
 
   font-family: "IBM Plex Sans", sans-serif;
-  font-family: "IBM Plex Serif", serif;
+  /* font-family: "IBM Plex Serif", serif; */
   font-size: 16px;
 
   overscroll-behavior: contain;
@@ -60,8 +60,6 @@ img {
 
   z-index: 10;
   position: fixed;
-
-  font-family: "IBM Plex Serif", serif;
 }
 
 #works {
