@@ -22,14 +22,14 @@ canvas {
 [class*="selfp"] {
   word-break: normal;
   margin: 0;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 2.75rem;
   font-weight: 400;
   font-family: "IBM Plex Serif", serif;
 }
 
 .padtop {
-  margin-top: 7.5vh;
+  margin-top: 5vh;
 }
 .padtop1 {
   margin-top: 15vh;

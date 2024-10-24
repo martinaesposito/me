@@ -15,7 +15,8 @@ body {
 
   font-family: "IBM Plex Sans", sans-serif;
   /* font-family: "IBM Plex Serif", serif; */
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-weight: 300;
 
   overscroll-behavior: contain;
   overflow: hidden;
@@ -38,7 +39,7 @@ a {
   display: block;
   color: black;
   border-bottom: solid 1px black;
-  padding: 1px;
+  padding: 0.5px;
   text-decoration: none;
   width: fit-content;
 }
