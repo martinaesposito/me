@@ -1608,7 +1608,9 @@ snglLet.forEach((l) => {
       }, 1000);
     } else if (n == 2) {
       //effetto emoji
-      let origC = l.innerHTML;
+      let origC = l.dataset.origC || l.innerHTML;
+      l.dataset.origC = origC; // Save original content
+
       l.innerHTML =
         filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
 
