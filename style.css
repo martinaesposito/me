@@ -22,7 +22,7 @@ body {
   font-family: "Akzidenz", sans-serif;
   /* font-family: "IBM Plex Serif", serif; */
   /* font-size: 16px; */
-  /* font-weight: 300; */
+  font-weight: 300;
   color: black;
 
   overscroll-behavior: contain;
@@ -63,7 +63,7 @@ img {
 
 /* ELEMENTI NAVIGAZIONE IN ALTO */
 .nav {
-  padding: 0 1.75vw;
+  padding: 1.75vw;
   background-color: transparent;
   white-space: nowrap;
   color: #fff;
