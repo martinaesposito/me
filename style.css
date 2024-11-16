@@ -55,6 +55,9 @@ a {
   text-decoration: none;
   width: fit-content;
 }
+a:hover {
+  color: #8e8e8e;
+}
 
 img {
   width: 100%;

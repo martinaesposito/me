@@ -22,7 +22,7 @@ canvas {
 [class*="selfp"] {
   word-break: break-word;
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.15rem;
   line-height: 2.75rem;
   /* font-family: "IBM Plex Serif", serif; */
   font-family: "century-old-style-std", serif;
