@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Akzidenz"; /* Name your font family */
-  src: url("/assets/AG57-Regular.otf"); /* Locate the .ttf file within your directory*/
+  src: url("./assets/AG57-Regular.otf"); /* Locate the .ttf file within your directory*/
 }
 
 html,
