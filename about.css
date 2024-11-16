@@ -22,10 +22,12 @@ canvas {
 [class*="selfp"] {
   word-break: normal;
   margin: 0;
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 2.75rem;
   font-weight: 400;
-  font-family: "IBM Plex Serif", serif;
+  /* font-family: "IBM Plex Serif", serif; */
+  font-family: "century-old-style-std", serif;
+  font-style: normal;
 }
 
 .padtop {
