@@ -1604,7 +1604,9 @@ snglLet.forEach((l) => {
       l.style.animation = "ease 3s";
 
       setTimeout(function () {
-        l.removeAttribute("style");
+        l.style.transition = "transform 0.3s ease, color 0.25s ease";
+        l.style.transform = "translate(0, 0)"; // Ritorna alla posizione originale
+        l.style.color = "";
       }, 1000);
     } else if (n == 2) {
       //effetto emoji
@@ -1615,6 +1617,7 @@ snglLet.forEach((l) => {
         filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
 
       setTimeout(function () {
+        l.style.transform = "translate(0, 0)"; // Ritorna alla posizione originale
         l.innerHTML = origC;
       }, 1000);
     }
