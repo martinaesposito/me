@@ -13,7 +13,7 @@ canvas {
   height: 100vh;
 
   padding-left: 1.75vw;
-  padding-right: 10vw;
+  padding-right: 7.5vw;
 
   /*     background-color: black;
     color: white; */
@@ -53,7 +53,7 @@ span {
   }
 }
 
-/* IMMAGINE MARGHE*/
+/* IMMAGINE MARGHE
 img {
   width: 22.5%;
   height: auto;
@@ -93,8 +93,8 @@ img {
     0 45%
   );
 
-  /* background-color: aqua; */
-}
+  /* background-color: aqua; 
+} */
 
 /* CONTATTI*/
 #contact {
@@ -110,11 +110,15 @@ img {
   #prescontainer {
     width: 100vw;
     padding: 0 2.75vw 5vh 2.75vw;
-    height: auto;
+    height: 100vh;
+  }
+  [class*="selfp"] {
+    font-size: 32px;
+    line-height: 2.25rem;
   }
 
   .padtop {
-    margin-top: 4vh;
+    margin-top: 5vh;
   }
   .padtop1 {
     margin-top: 10vh;
@@ -142,11 +146,14 @@ img {
   }
   [class*="selfp"] {
     font-size: 24px;
-    line-height: 2rem;
+    line-height: 1.75rem;
   }
 
   .padtop1 {
     margin-top: 5vh;
+  }
+  .padtop {
+    margin-top: 2.5vh;
   }
 
   #marghe {
