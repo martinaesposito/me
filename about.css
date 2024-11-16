@@ -108,8 +108,8 @@ img {
 @media screen and (max-width: 1024px) {
   #prescontainer {
     width: 100vw;
-    padding: 0 2.75vw 5vh 2.75vw;
-    height: 100vh;
+    padding: 0 2.5vw 5vh 2.5vw;
+    height: auto;
   }
   [class*="selfp"] {
     font-size: 32px;
@@ -133,15 +133,14 @@ img {
 
   #contact {
     margin-top: 0;
-    padding: 0 2.75vw 10vh 2.75vw;
+    padding: 0 2.5vw 10vh 2.5vw;
     width: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   #prescontainer {
-    padding: 0 2.5vw 5vh 5vw;
-    height: auto;
+    height: 100vh;
   }
   [class*="selfp"] {
     font-size: 24px;
