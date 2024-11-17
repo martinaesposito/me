@@ -23,14 +23,14 @@ canvas {
   word-break: break-word;
   margin: 0;
   font-size: 2rem;
-  line-height: 2.75rem;
+  line-height: 2.625rem;
   /* font-family: "IBM Plex Serif", serif; */
   font-family: "century-old-style-std", serif;
   font-style: normal;
 }
 
 .padtop {
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
 }
 .padtop1 {
   margin-top: 12.5vh;
