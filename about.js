@@ -1553,23 +1553,39 @@ let allText = document.querySelectorAll(".selfp"); //prendo tutti i paragrafi de
 
 allText.forEach((txt) => {
   let strTxt = txt.textContent; // prendo il contenuto del testo
-  let splitTxt = strTxt.split(""); // creo un array con tutte le lettere (inclusi gli spazi)
+
+  let words = strTxt.split(" ");
 
   txt.textContent = ""; // Svuoto il contenuto del testo
 
-  splitTxt.forEach((char) => {
-    // Verifica se il carattere è uno spazio
-    if (char === " ") {
-      txt.innerHTML += " "; // Aggiungi uno spazio normale (non racchiuso in <span>)
-    } else {
-      let span = document.createElement("span");
-      span.textContent = char;
-      txt.appendChild(span); // Aggiungi le altre lettere racchiuse in <span>
-    }
+  words.forEach((word) => {
+    let wordSpan = document.createElement("span");
+    wordSpan.classList.add("word");
+    let splitTxt = word.split(""); // creo un array con tutte le lettere (inclusi gli spazi)
+
+    splitTxt.forEach((char) => {
+      // Verifica se il carattere è uno spazio
+      if (char === " ") {
+        txt.innerHTML += " "; // Aggiungi uno spazio normale (non racchiuso in <span>)
+      } else {
+        let span = document.createElement("span");
+        span.classList.add("char");
+        span.textContent = char;
+        wordSpan.appendChild(span); // Aggiungi le altre lettere racchiuse in <span>
+      }
+    });
+
+    let space = document.createElement("span");
+    space.innerHTML = "&nbsp;";
+    wordSpan.appendChild(space);
+
+    console.log(wordSpan);
+
+    txt.appendChild(wordSpan);
   });
 });
 
-let snglLet = document.querySelectorAll("span"); //select the single letter;
+let snglLet = document.querySelectorAll("span.char"); //select the single letter;
 let l;
 
 let prevN = null;

@@ -22,8 +22,8 @@ canvas {
 [class*="selfp"] {
   word-break: break-word;
   margin: 0;
-  font-size: 2rem;
-  line-height: 2.625rem;
+  font-size: 2.1rem;
+  line-height: 2.75rem;
   /* font-family: "IBM Plex Serif", serif; */
   font-family: "century-old-style-std", serif;
   font-style: normal;
@@ -37,8 +37,14 @@ canvas {
   /* margin-top: 10vh; */
 }
 
+span.word {
+  word-break: keep-all;
+  display: inline-block;
+  /* text-wrap: nowrap; */
+}
+
 /* ANIMAZIONE LETTERINE */
-span {
+span.char {
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -112,8 +118,8 @@ img {
     height: auto;
   }
   [class*="selfp"] {
-    font-size: 1.75rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .padtop {
@@ -123,13 +129,13 @@ img {
     margin-top: 10vh;
   }
 
-  #marghe {
+  /* #marghe {
     position: relative;
     float: right;
     display: block;
     bottom: auto;
     width: 42.5vw;
-  }
+  } */
 
   #contact {
     margin-top: 0;
@@ -140,7 +146,8 @@ img {
 
 @media screen and (max-width: 768px) {
   #prescontainer {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   }
   [class*="selfp"] {
     font-size: 1.25rem;
@@ -148,7 +155,7 @@ img {
   }
 
   .padtop1 {
-    margin-top: 5vh;
+    margin-top: 7.5vh;
   }
   .padtop {
     margin-top: 2.5vh;
