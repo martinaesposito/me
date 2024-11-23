@@ -21,7 +21,7 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Akzidenz", sans-serif;
   /* font-family: "IBM Plex Serif", serif; */
-  /* font-size: 16px; */
+  font-size: 16px;
   font-weight: 300;
   color: black;
 
@@ -114,11 +114,13 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  :root {
-    --rem: 18;
+  html,
+  body {
+    font-size: 18px;
   }
   .nav {
     width: 100%;
+    padding: 1vw;
     margin: auto;
     text-align: center;
     /* display: none; */

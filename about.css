@@ -150,10 +150,10 @@ img {
     min-height: 100vh;
   }
 
-  /* [class*="selfp"] {
+  [class*="selfp"] {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  } */
+  }
 
   .padtop1 {
     margin-top: 7.5vh;
