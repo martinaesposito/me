@@ -1695,3 +1695,69 @@ document.addEventListener("touchmove", (e) => {
     }
   });
 });
+
+// //////////////////////////////////////////////////////////////////
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return [];
+  }
+}
+
+async function generateCVSections(url) {
+  const data = await fetchData(url);
+  const container = document.getElementById("cv-container");
+
+  // Grouping data by "Sezione"
+  const groupedData = {};
+  data.forEach((item) => {
+    if (!groupedData[item.Sezione]) {
+      groupedData[item.Sezione] = [];
+    }
+    groupedData[item.Sezione].push(item);
+  });
+
+  // Generating sections
+  for (const section in groupedData) {
+    const sectionDiv = document.createElement("div");
+    sectionDiv.classList.add("cv-section");
+
+    const sectionLabel = document.createElement("p");
+    const sectionClass = section.toLowerCase().replace(/\s+/g, "-");
+    sectionDiv.classList.add(sectionClass);
+    sectionLabel.classList.add("label");
+    sectionLabel.textContent = section;
+
+    sectionDiv.appendChild(sectionLabel);
+
+    groupedData[section].forEach((item) => {
+      const cvElement = document.createElement("div");
+      cvElement.classList.add("cv-element");
+
+      // Create the title element
+      let titleHTML =
+        item.Link && item.Link.trim() !== ""
+          ? `<a href="${item.Link}" target="_blank" rel="noopener noreferrer">${item.Nome}</a>`
+          : item.Nome;
+
+      cvElement.innerHTML = `
+     <div id="title" class="cv-el-value">${titleHTML}</div>
+     <div id="role" class="cv-el-value">${item.Ruolo}</div>
+     <div id="place" class="cv-el-value">${item.Luogo || ""}</div>
+     <div id="year" class="cv-el-value">${item.Year}</div>
+   `;
+
+      sectionDiv.appendChild(cvElement);
+    });
+
+    container.appendChild(sectionDiv);
+  }
+
+  document.body.appendChild(container); // Append the container to the body
+}
+
+// Example usage
+generateCVSections("assets/cv.json");

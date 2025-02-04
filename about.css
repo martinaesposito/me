@@ -6,19 +6,16 @@ canvas {
   z-index: -1;
 }
 
+/* PRESENTATION */
 #prescontainer {
   display: block;
   width: 77.5vw;
 
-  height: 100vh;
+  min-height: 97.5vh;
 
   padding-left: 1.75vw;
   padding-right: 7.5vw;
-
-  /*     background-color: black;
-    color: white; */
 }
-
 [class*="selfp"] {
   word-break: break-word;
   margin: 0;
@@ -28,26 +25,21 @@ canvas {
   font-family: "century-old-style-std", serif;
   font-style: normal;
 }
-
 .padtop {
   margin-top: 1.5rem;
 }
 .padtop1 {
   margin-top: 12.5vh;
-  /* margin-top: 10vh; */
 }
-
 span.word {
   word-break: keep-all;
   display: inline-block;
-  /* text-wrap: nowrap; */
 }
 
 /* ANIMAZIONE LETTERINE */
 span.char {
   transition: color 0.2s ease, transform 0.2s ease;
 }
-
 /* Define a keyframe animation for smooth transition and random movement */
 @keyframes smoothTranslate {
   0% {
@@ -58,55 +50,48 @@ span.char {
   }
 }
 
-/* IMMAGINE MARGHE
-img {
-  width: 22.5%;
-  height: auto;
-}
-
-#marghe {
-  position: absolute;
-
-  transform: scaleX(-1);
-  bottom: 7.5vh;
-  right: 0;
-
-  clip-path: polygon(
-    0 100%,
-    8% 95%,
-    43% 55%,
-    73% 63%,
-    89% 71%,
-    100% 33%,
-    100% 0,
-    78% 0,
-    65% 15%,
-    33% 24%,
-    0 45%
-  );
-  shape-outside: polygon(
-    0 100%,
-    8% 95%,
-    43% 55%,
-    73% 63%,
-    89% 71%,
-    100% 33%,
-    100% 0,
-    78% 0,
-    65% 15%,
-    33% 24%,
-    0 45%
-  );
-
-  /* background-color: aqua; 
-} */
-
 /* CONTATTI*/
 #contact {
   margin-top: 12.5vh;
-  /* margin-top: 10vh; */
-  /* overflow-wrap: break-word; */
   width: 22.5vw;
+  gap: 6px;
+}
+
+/* CV */
+#cv-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.75vw;
+  padding-bottom: 3.5vw;
+}
+.cv-el-value > a {
+  margin: 0;
+}
+
+.cv-element {
+  display: grid;
+  grid-template-columns: 5fr 3fr 3fr 1fr; /* Adjust proportions as needed */
+  /* gap: 1rem; */
+  align-items: center;
+  width: 100%;
+}
+
+.cv-el-value {
+  /* white-space: nowrap;  */
+  padding: 2.5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#year.cv-el-value {
+  text-align: right;
+}
+
+/* Academic Publications Grid */
+.cv-section.academic-publications .cv-element {
+  grid-template-columns: 3fr 0fr 0fr 1fr; /* Title takes more space */
 }
 
 /* /////////////////////////////////// */
