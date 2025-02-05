@@ -80,6 +80,7 @@ span.char {
 
 .cv-el-value {
   /* white-space: nowrap;  */
+  display: inline-block;
   padding: 2.5px 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -113,14 +114,6 @@ span.char {
   .padtop1 {
     margin-top: 10vh;
   }
-
-  /* #marghe {
-    position: relative;
-    float: right;
-    display: block;
-    bottom: auto;
-    width: 42.5vw;
-  } */
 
   #contact {
     margin-top: 0;

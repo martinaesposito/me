@@ -1579,7 +1579,7 @@ allText.forEach((txt) => {
     space.innerHTML = "&nbsp;";
     wordSpan.appendChild(space);
 
-    console.log(wordSpan);
+    // console.log(wordSpan);
 
     txt.appendChild(wordSpan);
   });
@@ -1606,7 +1606,7 @@ function generateRandomNumber() {
 snglLet.forEach((l) => {
   l.addEventListener("mouseover", () => {
     let n = generateRandomNumber();
-    console.log(n);
+    // console.log(n);
     if (n == 1) {
       //effetto letterine
       l.style.color = coolors[Math.floor(Math.random() * (6 - 0) + 0)];
@@ -1637,9 +1637,6 @@ snglLet.forEach((l) => {
         l.innerHTML = origC;
       }, 1000);
     }
-    // else if (n == 3) {
-    //   //effetto letterine
-    // }
   });
 });
 
@@ -1695,6 +1692,30 @@ document.addEventListener("touchmove", (e) => {
     }
   });
 });
+
+// //////////////////////////////////////////////////////////////////
+function linkColor() {
+  const links = document.querySelectorAll("a");
+  console.log(links);
+  links.forEach((link) => {
+    if (link.classList.contains("nav")) {
+    } else {
+      // Verifica se il link ha la classe "nav"
+      link.addEventListener("mouseenter", () => {
+        const randomColor = coolors[Math.floor(Math.random() * coolors.length)];
+        console.log(randomColor);
+        link.style.color = randomColor;
+      });
+
+      link.addEventListener("mouseleave", () => {
+        // if (link.classList.contains("nav")) {
+        // link.style.color = "white"; // Colore originale
+        // }
+        link.style.color = "black"; // Colore originale
+      });
+    }
+  });
+}
 
 // //////////////////////////////////////////////////////////////////
 async function fetchData(url) {
@@ -1757,6 +1778,8 @@ async function generateCVSections(url) {
   }
 
   document.body.appendChild(container); // Append the container to the body
+
+  linkColor();
 }
 
 // Example usage
