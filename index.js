@@ -73,10 +73,16 @@ async function generateProjects(url) {
     // Aggiungi al layout full
     fullContainer.appendChild(fullProjDiv);
 
-    // Aggiungi al layout grid
-    if (index % 3 === 0) col1.appendChild(gridProjDiv);
-    else if (index % 3 === 1) col2.appendChild(gridProjDiv);
-    else col3.appendChild(gridProjDiv);
+    // Check if this is the last project
+    if (index === data.length - 1) {
+      // Force last project to go into column 3
+      col3.appendChild(gridProjDiv);
+    } else {
+      // Normal distribution for all other projects
+      if (index % 3 === 0) col1.appendChild(gridProjDiv);
+      else if (index % 3 === 1) col2.appendChild(gridProjDiv);
+      else col3.appendChild(gridProjDiv);
+    }
   });
 
   console.log(fullContainer, col1, col2, col3);
