@@ -40,11 +40,11 @@ async function loadProjectDetails() {
   }
 
   //TITLE
-  projTitle.textContent = currentProject.Nome;
+  projTitle.innerHTML = currentProject.Nome;
   //INFO
-  projInfo.textContent = currentProject.Anno + " * " + currentProject.Fields;
+  projInfo.innerHTML = currentProject.Anno + " * " + currentProject.Fields;
   //DESCRIPTION
-  projDescription.textContent = currentProject.Descrizione;
+  projDescription.innerHTML = currentProject.Descrizione;
   // TEAM
   projTeam.innerHTML =
     "<span class='label'>Team</span> " +

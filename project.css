@@ -13,18 +13,23 @@
   gap: 1vh;
   line-height: 1.25rem;
 }
-#proj-title-descr {
-  max-width: 95%;
-}
 
-#proj-info {
-  max-width: 75%;
+#proj-title-descr {
+  max-width: 90%;
 }
 
 #proj-title {
   line-height: 3rem;
   font-size: 2.5rem;
   font-family: "century-old-style-std", serif;
+}
+#info {
+  margin-bottom: 3vh;
+}
+
+#proj-info {
+  max-width: 75%;
+  gap: 3vh;
 }
 
 @media screen and (max-width: 768px) {
