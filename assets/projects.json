@@ -1,5 +1,15 @@
 [
   {
+    "Folder": "interdependence",
+    "Anno": "2024",
+    "Nome": "Interdependence",
+    "Descrizione": "An initiative organised by Polimi Design System for Fuorisalone 2024 to reflect on the role of relationships and connections in contemporary society through a selection of design student projects. The event took place in three locations in the city of Milan–Fabbrica del Vapore, Campus Bovisa Durando and Salone Satellite. The main venue was Fabbrica del Vapore, where more than 50 international schools presented their projects. At the same location, a series of talks and presentations took place throughout the week, which ended with a performance by Campo Teatrale.",
+    "Fields": "Art direction",
+    "Team": "Carlo Morgan Capobianco \nPetra Bachiorrini \nZihan Li \nAnita Ruggiu \nAndrea Borsato \nSarah Cosentino \nDebora Baratta \nMatteo Zoppellaro \nAndrea Brolatti \nDiego Reggiani \nRiccardo Zerbi",
+    "Context": "Politecnico di Milano x Fuorisalone 2024",
+    "Video": ""
+  },
+  {
     "Folder": "handling-parakeets",
     "Anno": "2024",
     "Nome": "Handling parakeets",
@@ -7,16 +17,6 @@
     "Fields": "Data visualization, information design, creative coding",
     "Team": "Giulia Grassi\nMing Hu\nNausicaa Naibo\nFabio Pennone\nAnita Ruggiu",
     "Context": "Final Synthesis Studio, Master in Communication Design, Politecnico di Milano",
-    "Video": ""
-  },
-  {
-    "Folder": "interdependence",
-    "Anno": "2024",
-    "Nome": "Interdependence: designing relationships",
-    "Descrizione": "An initiative organised by Polimi Design System for Fuorisalone 2024 to reflect on the role of relationships and connections in contemporary society through a selection of design student projects. The event took place in three locations in the city of Milan–Fabbrica del Vapore, Campus Bovisa Durando and Salone Satellite. The main venue was Fabbrica del Vapore, where more than 50 international schools presented their projects. At the same location, a series of talks and presentations took place throughout the week, which ended with a performance by Campo Teatrale.",
-    "Fields": "Art direction",
-    "Team": "Carlo Morgan Capobianco \nPetra Bachiorrini \nZihan Li \nAnita Ruggiu \nAndrea Borsato \nSarah Cosentino \nDebora Baratta \nMatteo Zoppellaro \nAndrea Brolatti \nDiego Reggiani \nRiccardo Zerbi",
-    "Context": "Politecnico di Milano x Fuorisalone 2024",
     "Video": ""
   },
   {
@@ -40,16 +40,6 @@
     "Video": ""
   },
   {
-    "Folder": "n01",
-    "Anno": "2023",
-    "Nome": "N01",
-    "Descrizione": "A web experience to find your soulmate using only 1-bit messages. The aim is to show the language behind online communication, making fun of the numerous apps that nowadays aim to find us our true love. These technologies use human language to obtain a digital connection, while N01 does the opposite: the website makes us look for each other commu- nicating digitally but connecting physically. The core of the project consists of the research of the match associated by the platform. To find their soulmate the users have to identify which device is playing a sound each time they touch the screen. When the two persons meet they have to scan the respective devices to generate an artwork composed of the bits of communication sent during the experience. They can then save it as a memory of their match or look through all the other experiences collected in the gallery.",
-    "Fields": "Creative coding",
-    "Team": "Elisa De Benedettis \nDavide Agostinelli \nGiulia Gnessi",
-    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": ""
-  },
-  {
     "Folder": "illumia",
     "Anno": "2023",
     "Nome": "Illumia",
@@ -58,6 +48,16 @@
     "Team": "Andrea Borsato \nAnita Ruggiu \nCamilla Brusadin \nMarco Ernesto Taino \nChiara Mazzeo",
     "Context": "Final Synthesis Studio C1, Bachelor in Communication Design, Politecnico di Milano",
     "Video": "https://youtu.be/p2jKl22FbtU"
+  },
+  {
+    "Folder": "n01",
+    "Anno": "2023",
+    "Nome": "N01",
+    "Descrizione": "A web experience to find your soulmate using only 1-bit messages. The aim is to show the language behind online communication, making fun of the numerous apps that nowadays aim to find us our true love. These technologies use human language to obtain a digital connection, while N01 does the opposite: the website makes us look for each other commu- nicating digitally but connecting physically. The core of the project consists of the research of the match associated by the platform. To find their soulmate the users have to identify which device is playing a sound each time they touch the screen. When the two persons meet they have to scan the respective devices to generate an artwork composed of the bits of communication sent during the experience. They can then save it as a memory of their match or look through all the other experiences collected in the gallery.",
+    "Fields": "Creative coding",
+    "Team": "Elisa De Benedettis \nDavide Agostinelli \nGiulia Gnessi",
+    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano",
+    "Video": ""
   },
   {
     "Folder": "bookofself",

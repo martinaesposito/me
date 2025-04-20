@@ -15,44 +15,68 @@ async function fetchData(url) {
     return [];
   }
 }
+
+let projects = [];
+
 async function generateProjects(url) {
   const data = await fetchData(url);
 
   data.forEach((project, index) => {
-    const projDiv = document.createElement("div");
-    projDiv.classList.add("project");
-    projDiv.id = project.Folder;
+    // DIV PROGETTO
+    const createProjectDiv = () => {
+      const projDiv = document.createElement("div");
+      projDiv.classList.add("project");
+      projDiv.id = project.Folder;
 
-    const img = document.createElement("img");
-    img.classList.add("img-cover");
-    img.src =
-      `/assets/${project.Folder}/0.png` || `/assets/${project.Folder}/0.gif`;
-    img.alt = project.Nome;
-    img.style.objectFit = "cover";
-    img.onerror = () => {
-      img.style.display = "none"; // oppure: img.src = "/assets/placeholder.jpg";
+      //click listner per apertura pagina progetto
+      projDiv.addEventListener("click", () => {
+        window.location.href = `project.html?project=${project.Folder}`;
+      });
+
+      //immagine di copertina
+      const img = document.createElement("img");
+      img.classList.add("img-cover");
+      img.alt = project.Nome;
+      img.style.objectFit = "cover";
+
+      img.src = `/assets/${project.Folder}/cover.png`;
+      img.onerror = () => {
+        console.log("uff");
+        img.src = `/assets/${project.Folder}/cover.gif`;
+        img.onerror = () => {
+          console.log("uff");
+          img.style.display = "none";
+        };
+      };
+      //titolo
+      const name = document.createElement("p");
+      name.classList.add("title");
+      name.textContent = project.Nome;
+      //info
+      const meta = document.createElement("p");
+      meta.classList.add("meta");
+      meta.classList.add("label");
+      meta.textContent = `${project.Anno} * ${project.Fields}`;
+
+      projDiv.appendChild(img);
+      projDiv.appendChild(name);
+      projDiv.appendChild(meta);
+
+      projects.push(projDiv);
+      return projDiv;
     };
 
-    const name = document.createElement("p");
-    name.classList.add("title");
-    name.textContent = project.Nome;
+    // Crea due div separati: uno per il layout full e uno per il grid
+    const fullProjDiv = createProjectDiv();
+    const gridProjDiv = createProjectDiv();
 
-    const meta = document.createElement("p");
-    meta.classList.add("meta");
-    meta.classList.add("label");
-    meta.textContent = `${project.Anno} * ${project.Fields}`;
+    // Aggiungi al layout full
+    fullContainer.appendChild(fullProjDiv);
 
-    projDiv.appendChild(img);
-    projDiv.appendChild(name);
-    projDiv.appendChild(meta);
-
-    // full layout
-    fullContainer.appendChild(projDiv.cloneNode(true));
-
-    // grid layout (round robin)
-    if (index % 3 === 0) col1.appendChild(projDiv);
-    else if (index % 3 === 1) col2.appendChild(projDiv);
-    else col3.appendChild(projDiv);
+    // Aggiungi al layout grid
+    if (index % 3 === 0) col1.appendChild(gridProjDiv);
+    else if (index % 3 === 1) col2.appendChild(gridProjDiv);
+    else col3.appendChild(gridProjDiv);
   });
 
   console.log(fullContainer, col1, col2, col3);
@@ -82,4 +106,8 @@ function setupSwitch() {
 window.addEventListener("DOMContentLoaded", () => {
   generateProjects("assets/projects.json");
   setupSwitch();
+});
+
+projects.forEach((e) => {
+  e.addEventListener("click", () => {});
 });
