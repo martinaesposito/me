@@ -16,14 +16,14 @@
     "Anno": "2024",
     "Nome": "Handling parakeets",
     "Descrizione": "An interactive experience narrating the relationship between humans and parakeets in the online market through the symbolic element of the hand.\nThe project consists of an interactive installation that highlights the central role of humans in the presence of monk and ring-necked parakeets in Italian cities. Native to South America, these non-migratory birds were imported as pets due to their exotic charm. Some escaped captivity, forming urban colonies, while human demand fueled an online trade that continues today.\nTo investigate this phenomenon, 885 listings from 15 online platforms—including Facebook, Telegram, and Subito.it—were analyzed between November 1st and 5th, 2024. Among them, 114 listings featured photographs where, in addition to the parakeets for sale, human figures were visible through the presence of a hand.These listings were grouped into seven collections based on how the hand interacts with the parakeet. By comparing the images with their descriptions, the study explores the significance of these interactions, revealing how the birds are perceived and treated. The hand thus becomes the key symbol of the project, embodying the complex relationship between humans and parakeets. In the interactive experience, users can explore these collections and engage directly with the data through the movement of their own hand.\nThe experience consists of a web application built using three.js, and the Mediapipe Hand Landmark detection algorithm, a machine-learning solution developed by Google for hand recognition.\nThe project was showcased in a two-week exhibition at the MEET Digital Culture Centre in Milan.",
-    "Fields": "Data visualization, information design, creative coding",
+    "Fields": "Data visualization, creative coding",
     "Team": "Giulia Grassi\nMing Hu\nNausicaa Naibo\nFabio Pennone\nAnita Ruggiu",
     "Context": "Final Synthesis Studio, Master in Communication Design, Politecnico di Milano",
     "Video": ""
   },
   {
     "Folder": "inatto",
-    "Cover": "large",
+    "Cover": "contain",
     "Anno": "2024",
     "Nome": "INATTO",
     "Descrizione": "The magazine title is the legislation while each issue is a new right, legitimized through the words of the people who contributed to the creation magazine itself. The magazine aims to be a place for dialogue between different points of view, with the purpose of questioning those taboos that prevent the creative system from evolving.",

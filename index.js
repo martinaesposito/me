@@ -38,7 +38,6 @@ async function generateProjects(url) {
       const img = document.createElement("img");
       img.classList.add("img-cover");
       img.alt = project.Nome;
-      img.style.objectFit = "cover";
 
       img.src = `/assets/${project.Folder}/cover.png`;
       img.onerror = () => {
