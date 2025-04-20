@@ -26,6 +26,7 @@ async function generateProjects(url) {
     const createProjectDiv = () => {
       const projDiv = document.createElement("div");
       projDiv.classList.add("project");
+      projDiv.classList.add(project.Cover);
       projDiv.id = project.Folder;
 
       //click listner per apertura pagina progetto
