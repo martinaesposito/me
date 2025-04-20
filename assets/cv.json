@@ -1,6 +1,22 @@
 [
   {
     "Sezione": "Experience",
+    "Nome": "Dotdotdot",
+    "Link": "",
+    "Ruolo": "Graphic Design Intern",
+    "Luogo": "",
+    "Year": "2025"
+  },
+  {
+    "Sezione": "Experience",
+    "Nome": "<i>Interdependence: exploring opposites</i>, PoliMi x MDW2025",
+    "Link": "https://www.interdependence.polimi.it/",
+    "Ruolo": "Creative Director",
+    "Luogo": "",
+    "Year": "2025"
+  },
+  {
+    "Sezione": "Experience",
     "Nome": "<i>Gianfranco ferré dentro l’obbiettivo</i>, Forte di Bard",
     "Link": "",
     "Ruolo": "Art Director",
@@ -9,8 +25,8 @@
   },
   {
     "Sezione": "Experience",
-    "Nome": "<i>Interdependence</i>, Politecnico di Milano x Furorisalone",
-    "Link": "https://www.interdependence.polimi.it/",
+    "Nome": "<i>Interdependence: designing relationships</i>, PoliMi x MDW2024",
+    "Link": "",
     "Ruolo": "Art Director",
     "Luogo": "",
     "Year": "2024"

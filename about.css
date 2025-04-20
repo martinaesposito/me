@@ -40,7 +40,6 @@ span.word {
 span.char {
   transition: color 0.2s ease, transform 0.2s ease;
 }
-/* Define a keyframe animation for smooth transition and random movement */
 @keyframes smoothTranslate {
   0% {
     transform: translate(0, 0);
@@ -62,7 +61,7 @@ span.char {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.75rem;
   padding: 1.75vw;
   padding-bottom: 3.5vw;
 }
@@ -72,14 +71,12 @@ span.char {
 
 .cv-element {
   display: grid;
-  grid-template-columns: 5fr 3fr 3fr 1fr; /* Adjust proportions as needed */
-  /* gap: 1rem; */
+  grid-template-columns: 5fr 3fr 3fr 1fr;
   align-items: center;
   width: 100%;
 }
 
 .cv-el-value {
-  /* white-space: nowrap;  */
   display: inline-block;
   padding: 2.5px 0;
   overflow: hidden;
@@ -92,7 +89,7 @@ span.char {
 
 /* Academic Publications Grid */
 .cv-section.academic-publications .cv-element {
-  grid-template-columns: 3fr 0fr 0fr 1fr; /* Title takes more space */
+  grid-template-columns: 2fr 0fr 0fr 1fr; /* Title takes more space */
 }
 
 /* /////////////////////////////////// */
@@ -140,7 +137,23 @@ span.char {
     margin-top: 2.5vh;
   }
 
-  #marghe {
-    width: 55vw;
+  /* CV */
+  #cv-container {
+    gap: 2.25rem;
+    margin-bottom: 15vw;
+  }
+
+  .cv-section {
+    gap: 0.75rem;
+  }
+
+  .cv-element {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .cv-el-value {
+    padding: 0.05rem 0;
   }
 }

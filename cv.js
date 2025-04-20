@@ -1,2 +1,0 @@
-let cvContainer;
-let cvElement;
