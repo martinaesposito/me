@@ -1,0 +1,38 @@
+#proj-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* 1/3 e 2/3 */
+  width: 100%;
+  margin-top: 12.5vh;
+  height: 60vh;
+}
+
+.proj-el {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 1vh;
+  line-height: 1.25rem;
+}
+#proj-title-descr {
+  max-width: 95%;
+}
+
+#proj-info {
+  max-width: 75%;
+}
+
+#proj-title {
+  line-height: 3rem;
+  font-size: 2.5rem;
+  font-family: "century-old-style-std", serif;
+}
+
+@media screen and (max-width: 768px) {
+  #proj-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 5vh;
+    padding-bottom: 5vh;
+  }
+}

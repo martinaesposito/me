@@ -12,7 +12,7 @@
 
     <!--  STYLE -->
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./about.css" />
+    <link rel="stylesheet" type="text/css" href="./project.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <!--   FONT -->
@@ -35,25 +35,29 @@
 
     <!--   Progetto -->
     <div id="proj-container">
-      <div id="proj-title-descr">
-        <div id="titolo">titolo</div>
-        <div id="cat-anno">
-          <div id="categoria">art direction</div>
-          <div id="anno">2022</div>
-        </div>
+      <!-- descrizione -->
+      <div id="proj-title-descr" class="proj-el">
+        <div id="proj-title">titolo</div>
+        <div id="info" class="label"></div>
         <div id="descrizione">lorem</div>
       </div>
 
-      <div id="proj-info">
+      <!-- info-->
+      <div id="proj-info" class="proj-el">
         <div id="team">
           <span class="label"> team </span>
           persona 1
         </div>
-        <div id="team">
-          <span class="label"> team </span>
-          persona 1
+        <div id="context">
+          <span class="label"> Context </span>
+          contesto
         </div>
       </div>
     </div>
+
+    <!-- gallery -->
+    <div id="gallery"></div>
+
+    <script src="project.js" defer></script>
   </body>
 </html>
