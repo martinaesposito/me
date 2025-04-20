@@ -73,7 +73,8 @@
   text-decoration: underline;
 }
 
-.hidden {
+#proj-container-full.hidden,
+#proj-container-grid.hidden {
   display: none;
 }
 

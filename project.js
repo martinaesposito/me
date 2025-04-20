@@ -46,9 +46,7 @@ async function loadProjectDetails() {
   //DESCRIPTION
   projDescription.innerHTML = currentProject.Descrizione;
   // TEAM
-  projTeam.innerHTML =
-    "<span class='label'>Team</span> " +
-    currentProject.Team.replace(/\n/g, "<br>");
+  projTeam.innerHTML = "<span class='label'>Team</span> " + currentProject.Team;
   // CONTEXT
   projContext.innerHTML =
     "<span class='label'>Context</span> " + currentProject.Context;
