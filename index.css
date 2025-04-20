@@ -74,12 +74,12 @@
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
 /* ///////////////////// */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #switch {
     display: none;
   }
@@ -87,6 +87,7 @@
     display: none;
   }
   #proj-container-full {
+    display: flex;
     padding: 5vh 0;
   }
   #proj-container-full > .project {
