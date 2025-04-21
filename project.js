@@ -41,15 +41,40 @@ async function loadProjectDetails() {
 
   //TITLE
   projTitle.innerHTML = currentProject.Nome;
+
   //INFO
-  projInfo.innerHTML = currentProject.Anno + " * " + currentProject.Fields;
+  if (currentProject.Anno && currentProject.Fields) {
+    projInfo.innerHTML = currentProject.Anno + " * " + currentProject.Fields;
+  } else if (currentProject.Anno) {
+    projInfo.innerHTML = currentProject.Anno;
+  } else if (currentProject.Fields) {
+    projInfo.innerHTML = currentProject.Fields;
+  } else {
+    projInfo.style.display = "none";
+  }
+
   //DESCRIPTION
-  projDescription.innerHTML = currentProject.Descrizione;
+  if (currentProject.Descrizione && currentProject.Descrizione.trim() !== "") {
+    projDescription.innerHTML = currentProject.Descrizione;
+  } else {
+    projDescription.style.display = "none";
+  }
+
   // TEAM
-  projTeam.innerHTML = "<span class='label'>Team</span> " + currentProject.Team;
+  if (currentProject.Team && currentProject.Team.trim() !== "") {
+    projTeam.innerHTML =
+      "<span class='label'>Team</span> " + currentProject.Team;
+  } else {
+    projTeam.style.display = "none";
+  }
+
   // CONTEXT
-  projContext.innerHTML =
-    "<span class='label'>Context</span> " + currentProject.Context;
+  if (currentProject.Context && currentProject.Context.trim() !== "") {
+    projContext.innerHTML =
+      "<span class='label'>Context</span> " + currentProject.Context;
+  } else {
+    projContext.style.display = "none";
+  }
 
   // GALLERY
   loadGallery(folderName);

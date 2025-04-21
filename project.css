@@ -37,6 +37,9 @@
 }
 .gallery-item {
   width: 100vw;
+  background-color: white;
+}
+.gallery-item:has(video) {
   background-color: black;
 }
 
