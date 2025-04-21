@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: 3fr 1fr; /* 1/3 e 2/3 */
   width: 100%;
-  margin-top: 12.5vh;
+  margin-top: 10vh;
   height: 60vh;
 }
 .proj-el {
   display: flex;
   flex-direction: column;
-  padding: 0 1.75vw;
+  padding: 0 2.75vw;
   gap: 1vh;
   line-height: 1.25rem;
 }
