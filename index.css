@@ -78,6 +78,10 @@
   display: none;
 }
 
+.project {
+  cursor: pointer;
+}
+
 /* ///////////////////// */
 
 @media screen and (max-width: 1024px) {

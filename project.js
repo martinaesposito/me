@@ -55,25 +55,95 @@ async function loadProjectDetails() {
   loadGallery(folderName);
 }
 
+async function checkFileExists(url) {
+  try {
+    const response = await fetch(url, { method: "HEAD" });
+    return response.ok;
+  } catch (error) {
+    return false;
+  }
+}
+
 async function loadGallery(folderName) {
   for (let i = 0; i <= 10; i++) {
+    // Crea i percorsi dei file per i vari tipi di media
+    const pngPath = `./assets/${folderName}/${i}.png`;
+    const gifPath = `./assets/${folderName}/${i}.gif`;
+    const mp4Path = `./assets/${folderName}/${i}.mp4`;
+
+    // Verifica quale file esiste
+    const pngExists = await checkFileExists(pngPath);
+    const gifExists = !pngExists && (await checkFileExists(gifPath));
+    const mp4Exists =
+      !pngExists && !gifExists && (await checkFileExists(mp4Path));
+
+    // Se nessun file esiste, salta questo indice
+    if (!pngExists && !gifExists && !mp4Exists) {
+      continue;
+    }
+
+    // Crea il container solo se almeno un file esiste
     const imgContainer = document.createElement("div");
     imgContainer.classList.add("gallery-item");
 
-    const img = document.createElement("img");
-    img.src = `./assets/${folderName}/${i}.png`;
+    if (pngExists) {
+      // Carica immagine PNG
+      const img = document.createElement("img");
+      img.src = pngPath;
+      imgContainer.appendChild(img);
+    } else if (gifExists) {
+      // Carica GIF
+      const img = document.createElement("img");
+      img.src = gifPath;
+      imgContainer.appendChild(img);
+    } else if (mp4Exists) {
+      // Carica video MP4
+      const video = document.createElement("video");
+      video.controls = false;
+      video.autoplay = false;
+      video.muted = true;
+      video.src = mp4Path;
+      video.style.cursor = "pointer";
+      video.playsInline = true;
 
-    // Handle image load error - try GIF as fallback
-    img.onerror = () => {
-      img.src = `./assets/${folderName}/${i}.gif`;
-      img.onerror = () => {
-        // If both PNG and GIF fail, remove the container
-        imgContainer.remove();
-      };
-    };
+      let isPlaying = false;
 
-    imgContainer.appendChild(img);
-    gallery.appendChild(imgContainer);
+      video.addEventListener("loadeddata", () => {
+        video.currentTime = 1;
+
+        video.addEventListener("seeked", function onSeeked() {
+          video.pause();
+          video.removeEventListener("seeked", onSeeked);
+        });
+      });
+
+      video.addEventListener("click", () => {
+        if (isPlaying) {
+          video.pause();
+          isPlaying = false;
+        } else {
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                video.controls = true;
+                video.muted = false; // attivo l'audio solo se parte davvero
+                isPlaying = true;
+              })
+              .catch((error) => {
+                console.warn("Playback prevented:", error);
+              });
+          }
+        }
+      });
+
+      imgContainer.appendChild(video);
+    }
+
+    // Aggiungi il container alla galleria solo se contiene elementi
+    if (imgContainer.children.length > 0) {
+      gallery.appendChild(imgContainer);
+    }
   }
 }
 
