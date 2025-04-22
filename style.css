@@ -27,10 +27,16 @@ body {
   overflow-x: hidden;
 }
 
-/* ::selection {
+::selection {
   background: #f0ff65;
+  background: #62d282;
+
+  background: #e4e4e4;
+  /* background: #fcffa5; */
+
+  color: white;
   color: black;
-} */
+}
 
 ::-webkit-scrollbar {
   display: none;

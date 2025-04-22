@@ -1,5 +1,5 @@
 //TESTO COLORATO
-let coolors = [
+let cooolors = [
   "#FF9900",
   "#FF4E4E",
   "#FF7DBC",
@@ -1609,7 +1609,7 @@ snglLet.forEach((l) => {
     // console.log(n);
     if (n == 1) {
       //effetto letterine
-      l.style.color = coolors[Math.floor(Math.random() * (6 - 0) + 0)];
+      l.style.color = cooolors[Math.floor(Math.random() * (6 - 0) + 0)];
       l.style.display = "inline-block";
       l.style.transform =
         "translate(" +
@@ -1664,7 +1664,7 @@ document.addEventListener("touchmove", (e) => {
       // console.log(n);
       if (n == 1) {
         // Se la distanza in x e y è inferiore a 20px
-        l.style.color = coolors[Math.floor(Math.random() * coolors.length)];
+        l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
         l.style.display = "inline-block";
         l.style.transform = `translate(${Math.floor(
           Math.random() * 40 - 20
@@ -1692,30 +1692,6 @@ document.addEventListener("touchmove", (e) => {
     }
   });
 });
-
-// //////////////////////////////////////////////////////////////////
-function linkColor() {
-  const links = document.querySelectorAll("a");
-  console.log(links);
-  links.forEach((link) => {
-    if (link.classList.contains("nav")) {
-    } else {
-      // Verifica se il link ha la classe "nav"
-      link.addEventListener("mouseenter", () => {
-        const randomColor = coolors[Math.floor(Math.random() * coolors.length)];
-        console.log(randomColor);
-        link.style.color = randomColor;
-      });
-
-      link.addEventListener("mouseleave", () => {
-        // if (link.classList.contains("nav")) {
-        // link.style.color = "white"; // Colore originale
-        // }
-        link.style.color = "black"; // Colore originale
-      });
-    }
-  });
-}
 
 // //////////////////////////////////////////////////////////////////
 async function fetchData(url) {
@@ -1784,56 +1760,3 @@ async function generateCVSections(url) {
 
 // Example usage
 generateCVSections("assets/cv.json");
-
-//////
-
-function updateSelectionColor() {
-  const random = coolors[Math.floor(Math.random() * coolors.length)];
-  let styleTag = document.getElementById("dynamic-selection-style");
-
-  if (!styleTag) {
-    styleTag = document.createElement("style");
-    styleTag.id = "dynamic-selection-style";
-    document.head.appendChild(styleTag);
-  }
-
-  styleTag.innerHTML = `
-    ::selection {
-      background: ${random};
-      color: white;
-    }
-  `;
-}
-
-// Quando l'utente rilascia il mouse (fine selezione)
-function updateSelectionColor() {
-  const random = coolors[Math.floor(Math.random() * coolors.length)];
-  let styleTag = document.getElementById("dynamic-selection-style");
-
-  if (!styleTag) {
-    styleTag = document.createElement("style");
-    styleTag.id = "dynamic-selection-style";
-    document.head.appendChild(styleTag);
-  }
-
-  styleTag.innerHTML = `
-    ::selection {
-      background: ${random};
-      color: white;
-    }
-  `;
-}
-// Cambia colore all'inizio della selezione
-document.addEventListener("mouseup", () => {
-  const selection = document.getSelection();
-  if (selection && selection.toString().length > 0) {
-    updateSelectionColor();
-  }
-});
-
-document.addEventListener("touchend", () => {
-  const selection = document.getSelection();
-  if (selection && selection.toString().length > 0) {
-    updateSelectionColor();
-  }
-});
