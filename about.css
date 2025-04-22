@@ -15,7 +15,11 @@ canvas {
 
   padding-left: 1.75vw;
   padding-right: 7.5vw;
+
+  user-select: none;
+  /* tolgo la possibilità di selezionare */
 }
+
 [class*="selfp"] {
   word-break: break-word;
   margin: 0;
@@ -61,7 +65,7 @@ span.char {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 2.5rem;
   padding: 1.75vw;
   padding-bottom: 3.5vw;
 }

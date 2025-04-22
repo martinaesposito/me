@@ -41,13 +41,37 @@ async function generateProjects(url) {
 
       img.src = `./assets/${project.Folder}/cover.png`;
       img.onerror = () => {
-        console.log("uff");
+        console.log("uff (png)");
         img.src = `./assets/${project.Folder}/cover.gif`;
+
         img.onerror = () => {
-          console.log("uff");
-          img.style.display = "none";
+          console.log("uff (gif)");
+          img.remove();
+
+          const video = document.createElement("video");
+          video.classList.add("img-cover");
+          video.autoplay = true;
+          video.muted = true;
+          video.loop = true;
+          video.playsInline = true;
+          video.controls = false;
+          video.src = `./assets/${project.Folder}/cover.mp4`;
+
+          video.oncanplay = () => {
+            // Inserisci il video prima degli altri elementi
+            projDiv.insertBefore(video, projDiv.firstChild);
+          };
+
+          video.onerror = () => {
+            console.log("uff (mp4)");
+            video.remove();
+          };
+
+          // append subito, altrimenti `oncanplay` non parte
+          projDiv.insertBefore(video, projDiv.firstChild);
         };
       };
+
       //titolo
       const name = document.createElement("p");
       name.classList.add("title");

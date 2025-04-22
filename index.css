@@ -34,10 +34,15 @@
   min-height: 60vh;
   margin-bottom: 0.5rem;
 }
-
-#proj-container-grid img {
-  /* border-radius: 0.75rem; */
+.project video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
+/* #proj-container-grid img {
+  /* border-radius: 0.75rem; 
+} */
 #proj-container-col-1 .project:nth-child(odd) .img-cover,
 #proj-container-col-3 .project:nth-child(even) .img-cover,
 #proj-container-col-3 .project:nth-child(odd) .img-cover {
@@ -48,9 +53,9 @@
   padding: 1rem;
 }
 
-#proj-container-full > .large > img {
-  /* border-radius: 0.75rem; */
-}
+/* #proj-container-full > .large > img {
+  /* border-radius: 0.75rem; 
+} */
 
 #proj-container-full > .contain > img {
   object-fit: contain;

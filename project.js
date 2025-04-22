@@ -77,7 +77,7 @@ async function loadProjectDetails() {
   }
 
   // GALLERY
-  loadGallery(folderName);
+  loadGalleryFromMedia(currentProject);
 }
 
 async function checkFileExists(url) {
@@ -89,87 +89,95 @@ async function checkFileExists(url) {
   }
 }
 
-async function loadGallery(folderName) {
-  for (let i = 0; i <= 10; i++) {
-    // Crea i percorsi dei file per i vari tipi di media
-    const pngPath = `./assets/${folderName}/${i}.png`;
-    const gifPath = `./assets/${folderName}/${i}.gif`;
-    const mp4Path = `./assets/${folderName}/${i}.mp4`;
+function createGalleryItem(media, folderName) {
+  const container = document.createElement("div");
+  container.classList.add("gallery-item");
 
-    // Verifica quale file esiste
-    const pngExists = await checkFileExists(pngPath);
-    const gifExists = !pngExists && (await checkFileExists(gifPath));
-    const mp4Exists =
-      !pngExists && !gifExists && (await checkFileExists(mp4Path));
-
-    // Se nessun file esiste, salta questo indice
-    if (!pngExists && !gifExists && !mp4Exists) {
-      continue;
-    }
-
-    // Crea il container solo se almeno un file esiste
-    const imgContainer = document.createElement("div");
-    imgContainer.classList.add("gallery-item");
-
-    if (pngExists) {
-      // Carica immagine PNG
-      const img = document.createElement("img");
-      img.src = pngPath;
-      imgContainer.appendChild(img);
-    } else if (gifExists) {
-      // Carica GIF
-      const img = document.createElement("img");
-      img.src = gifPath;
-      imgContainer.appendChild(img);
-    } else if (mp4Exists) {
-      // Carica video MP4
-      const video = document.createElement("video");
-      video.controls = false;
-      video.autoplay = false;
-      video.muted = true;
-      video.src = mp4Path;
-      video.style.cursor = "pointer";
-      video.playsInline = true;
-
-      let isPlaying = false;
-
-      video.addEventListener("loadeddata", () => {
-        video.currentTime = 1;
-
-        video.addEventListener("seeked", function onSeeked() {
-          video.pause();
-          video.removeEventListener("seeked", onSeeked);
-        });
-      });
-
-      video.addEventListener("click", () => {
-        if (isPlaying) {
-          video.pause();
-          isPlaying = false;
-        } else {
-          const playPromise = video.play();
-          if (playPromise !== undefined) {
-            playPromise
-              .then(() => {
-                video.controls = true;
-                video.muted = false; // attivo l'audio solo se parte davvero
-                isPlaying = true;
-              })
-              .catch((error) => {
-                console.warn("Playback prevented:", error);
-              });
-          }
-        }
-      });
-
-      imgContainer.appendChild(video);
-    }
-
-    // Aggiungi il container alla galleria solo se contiene elementi
-    if (imgContainer.children.length > 0) {
-      gallery.appendChild(imgContainer);
-    }
+  //LAYOUT
+  if (media.layout) {
+    container.classList.add(media.layout);
   }
+
+  // IMAGE
+  if (media.type === "image") {
+    const img = document.createElement("img");
+    img.src = `./assets/${folderName}/${media.src}`;
+    if (media.layout === "contain") {
+      if (media.height) img.classList.add(`h-${media.height}`);
+    }
+    container.appendChild(img);
+  }
+
+  // IMAGE GROUP
+  if (media.type === "image-group") {
+    container.classList.add("side-by-side");
+
+    media.images.forEach((imgName) => {
+      const img = document.createElement("img");
+      img.src = `./assets/${folderName}/${imgName}`;
+      img.classList.add(`h-${media.height}`); // e.g. 100 or 50
+      container.appendChild(img);
+    });
+  }
+
+  // VIDEO
+  if (media.type === "video") {
+    const video = document.createElement("video");
+    video.src = `./assets/${folderName}/${media.src}`;
+    video.muted = media.muted ?? true;
+    video.controls = media.controls ?? false;
+    video.autoplay = media.autoplay ?? false;
+    video.playsInline = true;
+    video.style.cursor = "pointer";
+
+    // Se autoplay e muted sono true, abilita il loop
+    if (video.autoplay && video.muted) {
+      video.loop = true;
+      video.classList.add("autoplay");
+    }
+
+    let isPlaying = false;
+
+    video.addEventListener("loadeddata", () => {
+      if (!video.autoplay) {
+        video.currentTime = 1;
+        video.pause();
+        video.classList.add("controls");
+      }
+    });
+
+    video.addEventListener("click", () => {
+      if (isPlaying) {
+        video.pause();
+        isPlaying = false;
+      } else {
+        video.play().then(() => {
+          isPlaying = true;
+          video.controls = true;
+
+          // Riattiva audio solo se non è in autoplay
+          if (!video.autoplay) {
+            video.muted = false;
+          }
+        });
+      }
+    });
+
+    container.appendChild(video);
+  }
+
+  return container;
+}
+
+function loadGalleryFromMedia(project) {
+  const folderName = project.Folder;
+  const mediaList = project.Media;
+  gallery.innerHTML = ""; // clear
+
+  mediaList.forEach((media) => {
+    const element = createGalleryItem(media, folderName);
+    gallery.appendChild(element);
+  });
 }
 
 // Initialize when the DOM is fully loaded

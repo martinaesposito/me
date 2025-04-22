@@ -1784,3 +1784,56 @@ async function generateCVSections(url) {
 
 // Example usage
 generateCVSections("assets/cv.json");
+
+//////
+
+function updateSelectionColor() {
+  const random = coolors[Math.floor(Math.random() * coolors.length)];
+  let styleTag = document.getElementById("dynamic-selection-style");
+
+  if (!styleTag) {
+    styleTag = document.createElement("style");
+    styleTag.id = "dynamic-selection-style";
+    document.head.appendChild(styleTag);
+  }
+
+  styleTag.innerHTML = `
+    ::selection {
+      background: ${random};
+      color: white;
+    }
+  `;
+}
+
+// Quando l'utente rilascia il mouse (fine selezione)
+function updateSelectionColor() {
+  const random = coolors[Math.floor(Math.random() * coolors.length)];
+  let styleTag = document.getElementById("dynamic-selection-style");
+
+  if (!styleTag) {
+    styleTag = document.createElement("style");
+    styleTag.id = "dynamic-selection-style";
+    document.head.appendChild(styleTag);
+  }
+
+  styleTag.innerHTML = `
+    ::selection {
+      background: ${random};
+      color: white;
+    }
+  `;
+}
+// Cambia colore all'inizio della selezione
+document.addEventListener("mouseup", () => {
+  const selection = document.getSelection();
+  if (selection && selection.toString().length > 0) {
+    updateSelectionColor();
+  }
+});
+
+document.addEventListener("touchend", () => {
+  const selection = document.getSelection();
+  if (selection && selection.toString().length > 0) {
+    updateSelectionColor();
+  }
+});

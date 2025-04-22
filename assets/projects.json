@@ -8,7 +8,73 @@
     "Fields": "Art direction",
     "Team": "Carlo Morgan Capobianco <br>Petra Bachiorrini <br>Zihan Li <br>Anita Ruggiu <br>Andrea Borsato <br>Sarah Cosentino <br>Debora Baratta <br>Matteo Zoppellaro <br>Andrea Brolatti <br>Diego Reggiani <br>Riccardo Zerbi",
     "Context": "Politecnico di Milano x Fuorisalone 2024",
-    "Video": ""
+    "Media": [
+      {
+        "type": "video",
+        "src": "0.mp4",
+        "layout": "full",
+        "autoplay": true,
+        "muted": true,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["3a.png", "3b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "6.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "7.png",
+        "layout": "contain",
+        "height": 100
+      },
+      {
+        "type": "image",
+        "src": "8.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "9.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "10.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "11.png",
+        "layout": "full"
+      }
+    ]
   },
   {
     "Folder": "handling-parakeets",
@@ -18,8 +84,7 @@
     "Descrizione": "An interactive experience narrating the relationship between humans and parakeets in the online market through the symbolic element of the hand.<br>The project consists of an interactive installation that highlights the central role of humans in the presence of monk and ring-necked parakeets in Italian cities. Native to South America, these non-migratory birds were imported as pets due to their exotic charm. Some escaped captivity, forming urban colonies, while human demand fueled an online trade that continues today.<br>To investigate this phenomenon, 885 listings from 15 online platforms—including Facebook, Telegram, and Subito.it—were analyzed between November 1st and 5th, 2024. Among them, 114 listings featured photographs where, in addition to the parakeets for sale, human figures were visible through the presence of a hand.These listings were grouped into seven collections based on how the hand interacts with the parakeet. By comparing the images with their descriptions, the study explores the significance of these interactions, revealing how the birds are perceived and treated. The hand thus becomes the key symbol of the project, embodying the complex relationship between humans and parakeets. In the interactive experience, users can explore these collections and engage directly with the data through the movement of their own hand.<br>The experience consists of a web application built using three.js, and the Mediapipe Hand Landmark detection algorithm, a machine-learning solution developed by Google for hand recognition.<br>The project was showcased in a two-week exhibition at the MEET Digital Culture Centre in Milan.",
     "Fields": "Data visualization, creative coding",
     "Team": "Giulia Grassi<br>Ming Hu<br>Nausicaa Naibo<br>Fabio Pennone<br>Anita Ruggiu",
-    "Context": "Final Synthesis Studio, Master in Communication Design, Politecnico di Milano",
-    "Video": ""
+    "Context": "Final Synthesis Studio, Master in Communication Design, Politecnico di Milano"
   },
   {
     "Folder": "inatto",
@@ -29,8 +94,7 @@
     "Descrizione": "The magazine title is the legislation while each issue is a new right, legitimized through the words of the people who contributed to the creation magazine itself. The magazine aims to be a place for dialogue between different points of view, with the purpose of questioning those taboos that prevent the creative system from evolving.",
     "Fields": "Editorial design",
     "Team": "Miguel Amaya<br>Ginevra Bernasconi <br>Giulia Bonalumi <br>Federico Gajo <br>Camilla Tosi",
-    "Context": "Complex artifacts studio, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": ""
+    "Context": "Complex artifacts studio, Bachelor in Communication Design, Politecnico di Milano"
   },
   {
     "Folder": "waggle",
@@ -40,8 +104,7 @@
     "Descrizione": "An app to ‘collect’ the dogs that you meet during your daily walk in the Dog Area in Parco Sempione, encouraging socialisation and education <br>between dog-owners.The app allows you to create a card of your four-legged friend and share it with other dog owners. ",
     "Fields": "Creative coding",
     "Team": "Andrea Brolatti<br>Marco Convento<br>Anita Ruggiu",
-    "Context": "Interaction Studio C2, Master in Communication Design, Politecnico di Milano",
-    "Video": ""
+    "Context": "Interaction Studio C2, Master in Communication Design, Politecnico di Milano"
   },
   {
     "Folder": "illumia",
@@ -52,7 +115,76 @@
     "Fields": "Speculative design",
     "Team": "Andrea Borsato <br>Anita Ruggiu <br>Camilla Brusadin <br>Marco Ernesto Taino <br>Chiara Mazzeo",
     "Context": "Final Synthesis Studio C1, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": "https://youtu.be/p2jKl22FbtU"
+    "Video": "https://youtu.be/p2jKl22FbtU",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.gif",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "contain"
+      },
+      {
+        "type": "video",
+        "src": "4.mp4",
+        "layout": "full",
+        "autoplay": false,
+        "muted": false,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["6a.png", "6b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "7.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "8.png",
+        "layout": "contain"
+      },
+      {
+        "type": "video",
+        "src": "9.mp4",
+        "layout": "full",
+        "autoplay": false,
+        "muted": false,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "10.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "11.png",
+        "layout": "full"
+      }
+    ]
   },
   {
     "Folder": "n01",
@@ -62,8 +194,7 @@
     "Descrizione": "A web experience to find your soulmate using only 1-bit messages. The aim is to show the language behind online communication, making fun of the numerous apps that nowadays aim to find us our true love. These technologies use human language to obtain a digital connection, while N01 does the opposite: the website makes us look for each other commu- nicating digitally but connecting physically. <br>The core of the project consists of the research of the match associated by the platform. To find their soulmate the users have to identify which device is playing a sound each time they touch the screen. When the two persons meet they have to scan the respective devices to generate an artwork composed of the bits of communication sent during the experience. They can then save it as a memory of their match or look through all the other experiences collected in the gallery.",
     "Fields": "Creative coding",
     "Team": "Elisa De Benedettis <br>Davide Agostinelli <br>Giulia Gnessi",
-    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": ""
+    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano"
   },
   {
     "Folder": "bookofself",
@@ -73,8 +204,7 @@
     "Descrizione": "A series of analog photographic prints exploring the theme of self-representation. Through the lens of the camera, the image of the person detaches from its identity and becomes a shape against a background, a part of a new bi-dimensional reality. By playing both in the studio and in the dark room, frames of different body parts were used to recreate iconic pictures of photographers such as Bill Brandt and Robert Mapplethorpe. The work proceeded by trial and error, exploring the possibility that the medium itself of photography could offer. The final prints were bound into a book while all the attempts and the experiments relative to the process were collected into a separate notebook.",
     "Fields": "Photography",
     "Team": "",
-    "Context": "Personal project",
-    "Video": ""
+    "Context": "Personal project"
   },
   {
     "Folder": "estate",
@@ -84,8 +214,7 @@
     "Descrizione": "A photographic book, printed in risograph and screen printing, made by a group of non-designers during a course at the CFP Bauer Foundation. <br>The most challenging but beautiful aspect of this work was the cooperation with people that don’t belong to the design field and were new to these kinds of projects. Working together the group took care of every aspect: from the making and printing of the pictures, to the cutting, folding and binding of the signatures. <br>Most of the book is printed in a risograph using black and red, except for a signature printed in four colors. For the last twelve pages, each of the participants drew an illustration related to the theme of the project and impressed it in screen-printing. The book was then bound by hand using the kettle stitch technique.",
     "Fields": "Editorial design",
     "Team": "Cesare Lorenzo <br>Laura Bagnera <br>Flavia Chornobai <br>Camilla Vaghi <br>Agnese Costanzo <br>Simone Croci <br>Giorgia Del Giudice <br>Chiara Carapellese <br>Giulia Velardo",
-    "Context": "CFP Bauer",
-    "Video": ""
+    "Context": "CFP Bauer"
   },
   {
     "Folder": "drawing-arena",
@@ -95,8 +224,7 @@
     "Descrizione": "A drawing platform designed for kids to make them interact with digital devices in unusual ways. By rotating the phone the player draws a line that changes tint each time it hits one of the colored dots spread all over the arena. The platform was developed both for desktop and mobile using P5js, a javascript and processing library designed to make generative art and crea- tive coding sketches.",
     "Fields": "Creative coding",
     "Team": "",
-    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": ""
+    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano"
   },
   {
     "Folder": "craftwork",
@@ -106,8 +234,7 @@
     "Descrizione": "",
     "Fields": "Creative coding",
     "Team": "",
-    "Context": "Andrea Benedetti",
-    "Video": ""
+    "Context": "Andrea Benedetti"
   },
   {
     "Folder": "valli-unite",
@@ -128,8 +255,7 @@
     "Descrizione": "An interactive guide for non-designers explaining the design principles behind a wayfinding system. Despite the amount of information, the book isn’t a theoretical manual and asks the reader to parti- cipate actively. The readers start from the first chapter, in which the design principles are explained and then navigate through the other pages to learn and observe how they are applied to some real cases. While navigating the book, they must also attach the stickers of the design principles best displayed by the example in the proper spaces at the corner of the pages. To prove the effectiveness of street signs in conditions of rough visibility, sheets simulating weather conditions, such as fog or darkness, are placed at the end of the book. When the readers encounter those particular examples they can insert the cards in the appropriate pockets and confirm their effectiveness.",
     "Fields": "Editorial design",
     "Team": "Andrea Borsato <br>Anita Ruggiu",
-    "Context": "Studio of design fundamentals, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": ""
+    "Context": "Studio of design fundamentals, Bachelor in Communication Design, Politecnico di Milano"
   },
   {
     "Folder": "calendario",
@@ -139,7 +265,6 @@
     "Descrizione": "A series of twelve illustrations realized for the 2022 calendar. Each month is presented as a still life of a table at breakfast time, returning the feeling of that particular period of the year by combining seasonal food with different lights and shades of color. Though the habit of breakfast hasn’t got anything artistic in itself, it can become a moment of care and beauty to start the day in a different mood. For this project, I was interviewed by an Italian magazine of illustration called Brillo.",
     "Fields": "Illustration",
     "Team": "",
-    "Context": "Personal project",
-    "Video": ""
+    "Context": "Personal project"
   }
 ]
