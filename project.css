@@ -102,6 +102,16 @@
   }
 
   /* Gallery */
+  .gallery-item.contain {
+    height: 50vh;
+  }
+  .gallery-item.contain:has(.h-100) {
+    height: 80vh;
+  }
+  .gallery-item.side-by-side {
+    height: auto;
+  }
+
   .gallery-item > img {
     height: 50vh;
   }
@@ -132,5 +142,8 @@
   }
   .h-50 {
     height: 50vh !important;
+  }
+  .h-30 {
+    height: 30vh !important;
   }
 }

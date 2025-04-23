@@ -227,7 +227,57 @@
     "Descrizione": "An app to ‘collect’ the dogs that you meet during your daily walk in the Dog Area in Parco Sempione, encouraging socialisation and education <br>between dog-owners.The app allows you to create a card of your four-legged friend and share it with other dog owners. ",
     "Fields": "Creative coding",
     "Team": "Andrea Brolatti<br>Marco Convento<br>Anita Ruggiu",
-    "Context": "Interaction Studio C2, Master in Communication Design, Politecnico di Milano"
+    "Context": "Interaction Studio C2, Master in Communication Design, Politecnico di Milano",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "contain",
+        "height": 100
+      },
+      {
+        "type": "image-group",
+        "images": ["2a.png", "2b.png"],
+        "layout": "side-by-side",
+        "height": 30
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image-group",
+        "images": ["4a.png", "4b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "6.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "7.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "8.png",
+        "layout": "contain"
+      }
+    ]
   },
   {
     "Folder": "illumia",
