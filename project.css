@@ -41,6 +41,10 @@
 .gallery-item:has(video) {
   background-color: black;
 }
+.gallery-item.side-by-side {
+  background-color: white;
+  height: 100vh;
+}
 
 .full img,
 .full .autoplay {
@@ -72,7 +76,8 @@
   box-sizing: border-box;
 }
 
-.side-by-side > img {
+.side-by-side > img,
+.side-by-side > video {
   min-width: 0;
   object-fit: cover;
 }

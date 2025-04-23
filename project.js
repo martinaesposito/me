@@ -101,8 +101,7 @@ function createGalleryItem(media, folderName) {
   // IMAGE
   if (media.type === "image") {
     const img = document.createElement("img");
-    console.log("Carico immagine:", `../assets/${folderName}/${media.src}`);
-    img.src = `../assets/${folderName}/${media.src}`;
+    img.src = `./assets/${folderName}/${media.src}`;
     if (media.layout === "contain") {
       if (media.height) img.classList.add(`h-${media.height}`);
     }
@@ -113,18 +112,33 @@ function createGalleryItem(media, folderName) {
   if (media.type === "image-group") {
     container.classList.add("side-by-side");
 
-    media.images.forEach((imgName) => {
-      const img = document.createElement("img");
-      img.src = `../assets/${folderName}/${imgName}`;
-      img.classList.add(`h-${media.height}`); // e.g. 100 or 50
-      container.appendChild(img);
+    media.images.forEach((fileName) => {
+      const isVideo = fileName.split(".").pop().toLowerCase() === "mp4";
+
+      if (isVideo) {
+        const video = document.createElement("video");
+        video.src = `./assets/${folderName}/${fileName}`;
+        video.muted = media.muted ?? true;
+        video.controls = media.controls ?? false;
+        video.autoplay = media.autoplay ?? false;
+        video.playsInline = true;
+        video.loop = video.autoplay && video.muted;
+        video.classList.add(`h-${media.height}`);
+
+        container.appendChild(video);
+      } else {
+        const img = document.createElement("img");
+        img.src = `./assets/${folderName}/${fileName}`;
+        img.classList.add(`h-${media.height}`);
+        container.appendChild(img);
+      }
     });
   }
 
   // VIDEO
   if (media.type === "video") {
     const video = document.createElement("video");
-    video.src = `../assets/${folderName}/${media.src}`;
+    video.src = `./assets/${folderName}/${media.src}`;
     video.muted = media.muted ?? true;
     video.controls = media.controls ?? false;
     video.autoplay = media.autoplay ?? false;
@@ -176,7 +190,7 @@ function loadGalleryFromMedia(project) {
   gallery.innerHTML = ""; // clear
 
   mediaList.forEach((media) => {
-    console.log("Loading media:", media);
+    console.log("Loading media:", media, typeof media);
     const element = createGalleryItem(media, folderName);
     gallery.appendChild(element);
   });

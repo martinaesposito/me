@@ -174,9 +174,12 @@
       },
       {
         "type": "image-group",
-        "images": ["6a.gif", "6b.gif"],
+        "images": ["6a.mp4", "6b.mp4"],
         "layout": "side-by-side",
-        "height": 50
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
         "type": "image",
