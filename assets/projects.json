@@ -141,19 +141,21 @@
     "Media": [
       {
         "type": "image",
-        "src": "0.gif",
+        "src": "0.png",
         "layout": "full"
-      },
-      {
-        "type": "image-group",
-        "images": ["1a.png", "1b.png"],
-        "layout": "side-by-side",
-        "height": 50
       },
       {
         "type": "image",
-        "src": "2.png",
+        "src": "1.png",
         "layout": "full"
+      },
+      {
+        "type": "video",
+        "src": "2.mp4",
+        "layout": "full",
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
         "type": "image",
@@ -162,8 +164,8 @@
       },
       {
         "type": "image",
-        "src": "4.gif",
-        "layout": "contain"
+        "src": "4.png",
+        "layout": "full"
       },
       {
         "type": "image",
@@ -171,14 +173,46 @@
         "layout": "full"
       },
       {
-        "type": "image",
-        "src": "6.png",
-        "layout": "contain"
+        "type": "image-group",
+        "images": ["6a.gif", "6b.gif"],
+        "layout": "side-by-side",
+        "height": 50
       },
       {
         "type": "image",
-        "src": "7.gif",
+        "src": "7.png",
         "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "8.png",
+        "layout": "full"
+      },
+      {
+        "type": "video",
+        "src": "9.mp4",
+        "layout": "full",
+        "autoplay": true,
+        "muted": true,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "10.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "11.png",
+        "layout": "full"
+      },
+      {
+        "type": "video",
+        "src": "12.mp4",
+        "layout": "full",
+        "autoplay": false,
+        "muted": false,
+        "controls": false
       }
     ]
   },

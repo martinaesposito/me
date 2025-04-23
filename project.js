@@ -101,7 +101,8 @@ function createGalleryItem(media, folderName) {
   // IMAGE
   if (media.type === "image") {
     const img = document.createElement("img");
-    img.src = `/assets/${folderName}/${media.src}`;
+    console.log("Carico immagine:", `../assets/${folderName}/${media.src}`);
+    img.src = `../assets/${folderName}/${media.src}`;
     if (media.layout === "contain") {
       if (media.height) img.classList.add(`h-${media.height}`);
     }
@@ -114,7 +115,7 @@ function createGalleryItem(media, folderName) {
 
     media.images.forEach((imgName) => {
       const img = document.createElement("img");
-      img.src = `/assets/${folderName}/${imgName}`;
+      img.src = `../assets/${folderName}/${imgName}`;
       img.classList.add(`h-${media.height}`); // e.g. 100 or 50
       container.appendChild(img);
     });
@@ -123,7 +124,7 @@ function createGalleryItem(media, folderName) {
   // VIDEO
   if (media.type === "video") {
     const video = document.createElement("video");
-    video.src = `./assets/${folderName}/${media.src}`;
+    video.src = `../assets/${folderName}/${media.src}`;
     video.muted = media.muted ?? true;
     video.controls = media.controls ?? false;
     video.autoplay = media.autoplay ?? false;
@@ -175,6 +176,7 @@ function loadGalleryFromMedia(project) {
   gallery.innerHTML = ""; // clear
 
   mediaList.forEach((media) => {
+    console.log("Loading media:", media);
     const element = createGalleryItem(media, folderName);
     gallery.appendChild(element);
   });
