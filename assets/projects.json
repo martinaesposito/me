@@ -367,7 +367,36 @@
     "Descrizione": "A web experience to find your soulmate using only 1-bit messages. The aim is to show the language behind online communication, making fun of the numerous apps that nowadays aim to find us our true love. These technologies use human language to obtain a digital connection, while N01 does the opposite: the website makes us look for each other commu- nicating digitally but connecting physically. <br>The core of the project consists of the research of the match associated by the platform. To find their soulmate the users have to identify which device is playing a sound each time they touch the screen. When the two persons meet they have to scan the respective devices to generate an artwork composed of the bits of communication sent during the experience. They can then save it as a memory of their match or look through all the other experiences collected in the gallery.",
     "Fields": "Creative coding",
     "Team": "Elisa De Benedettis <br>Davide Agostinelli <br>Giulia Gnessi",
-    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano"
+    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["1a.mp4", "1b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["4a.png", "4b.mp4"],
+        "layout": "side-by-side",
+        "height": 50
+      }
+    ]
   },
   {
     "Folder": "bookofself",

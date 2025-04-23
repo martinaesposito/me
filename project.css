@@ -105,6 +105,9 @@
   .gallery-item.contain {
     height: 50vh;
   }
+  .gallery-item.contain:has(video) {
+    height: 80vh;
+  }
   .gallery-item.contain:has(.h-100) {
     height: 80vh;
   }
