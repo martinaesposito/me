@@ -41,7 +41,8 @@
 .gallery-item:has(video) {
   background-color: black;
 }
-.gallery-item.side-by-side {
+.gallery-item.side-by-side,
+.gallery-item.contain {
   background-color: white;
   height: 100vh;
 }

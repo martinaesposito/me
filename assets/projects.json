@@ -152,7 +152,7 @@
       {
         "type": "video",
         "src": "2.mp4",
-        "layout": "full",
+        "layout": "contain",
         "autoplay": true,
         "muted": true,
         "controls": false
