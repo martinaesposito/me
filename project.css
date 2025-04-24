@@ -35,9 +35,9 @@
   width: 100vw;
   background-color: white;
 }
-.gallery-item > img {
+/* .gallery-item > img {
   height: 100vh;
-}
+} */
 .gallery-item:has(video) {
   background-color: black;
 }
@@ -132,7 +132,7 @@
   .contain img,
   .contain video {
     padding: 2.75vw;
-    width: calc(100% - 1.375vw);
+    width: calc(100% - 5.5vw);
   }
   .side-by-side {
     gap: 2.75vw;

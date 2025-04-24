@@ -72,7 +72,7 @@
       {
         "type": "image",
         "src": "11.png",
-        "layout": "full"
+        "layout": "contain"
       }
     ]
   },
@@ -406,7 +406,56 @@
     "Descrizione": "A series of analog photographic prints exploring the theme of self-representation. Through the lens of the camera, the image of the person detaches from its identity and becomes a shape against a background, a part of a new bi-dimensional reality. By playing both in the studio and in the dark room, frames of different body parts were used to recreate iconic pictures of photographers such as Bill Brandt and Robert Mapplethorpe. The work proceeded by trial and error, exploring the possibility that the medium itself of photography could offer. The final prints were bound into a book while all the attempts and the experiments relative to the process were collected into a separate notebook.",
     "Fields": "Photography",
     "Team": "",
-    "Context": "Personal project"
+    "Context": "Personal project",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "full"
+      },
+
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "6.jpg",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "7.png",
+        "layout": "contain",
+        "height": 100
+      },
+      {
+        "type": "image",
+        "src": "8.png",
+        "layout": "contain"
+      }
+    ]
   },
   {
     "Folder": "estate",
@@ -416,7 +465,65 @@
     "Descrizione": "A photographic book, printed in risograph and screen printing, made by a group of non-designers during a course at the CFP Bauer Foundation. <br>The most challenging but beautiful aspect of this work was the cooperation with people that don’t belong to the design field and were new to these kinds of projects. Working together the group took care of every aspect: from the making and printing of the pictures, to the cutting, folding and binding of the signatures. <br>Most of the book is printed in a risograph using black and red, except for a signature printed in four colors. For the last twelve pages, each of the participants drew an illustration related to the theme of the project and impressed it in screen-printing. The book was then bound by hand using the kettle stitch technique.",
     "Fields": "Editorial design",
     "Team": "Cesare Lorenzo <br>Laura Bagnera <br>Flavia Chornobai <br>Camilla Vaghi <br>Agnese Costanzo <br>Simone Croci <br>Giorgia Del Giudice <br>Chiara Carapellese <br>Giulia Velardo",
-    "Context": "CFP Bauer"
+    "Context": "CFP Bauer",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["1a.png", "1b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "contain"
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "full"
+      },
+
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["6a.png", "6b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "7.png",
+        "layout": "contain",
+        "height": 50
+      },
+
+      {
+        "type": "image-group",
+        "images": ["8a.png", "8b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "9.png",
+        "layout": "full"
+      }
+    ]
   },
   {
     "Folder": "drawing-arena",
