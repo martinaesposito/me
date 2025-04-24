@@ -533,7 +533,27 @@
     "Descrizione": "A drawing platform designed for kids to make them interact with digital devices in unusual ways. By rotating the phone the player draws a line that changes tint each time it hits one of the colored dots spread all over the arena. The platform was developed both for desktop and mobile using P5js, a javascript and processing library designed to make generative art and crea- tive coding sketches.",
     "Fields": "Creative coding",
     "Team": "",
-    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano"
+    "Context": "Creative coding, Bachelor in Communication Design, Politecnico di Milano",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "video",
+        "src": "1.mp4",
+        "layout": "full",
+        "autoplay": true,
+        "muted": true,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "full"
+      }
+    ]
   },
   {
     "Folder": "craftwork",
@@ -543,7 +563,37 @@
     "Descrizione": "",
     "Fields": "Creative coding",
     "Team": "",
-    "Context": "Andrea Benedetti"
+    "Context": "Andrea Benedetti",
+    "Media": [
+      {
+        "type": "image-group",
+        "images": ["0a.png", "0b.mp4"],
+        "layout": "side-by-side",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "contain",
+        "height": 50
+      }
+    ]
   },
   {
     "Folder": "valli-unite",
