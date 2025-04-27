@@ -56,9 +56,7 @@ async function generateProjects(url) {
           video.playsInline = true;
           video.controls = false;
           video.src = `./assets/${project.Folder}/cover.mp4`;
-          if (project.Poster) {
-            video.poster = `./assets/${project.Folder}/${project.Poster}`;
-          }
+          video.poster = `./assets/${project.Folder}/cover_poster.webp`;
           video.oncanplay = () => {
             projDiv.insertBefore(video, projDiv.firstChild);
           };
