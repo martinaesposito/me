@@ -39,7 +39,7 @@ async function generateProjects(url) {
       img.classList.add("img-cover");
       img.alt = project.Nome;
 
-      img.src = `./assets/${project.Folder}/cover.png`;
+      img.src = `./assets/${project.Folder}/cover.webp`;
       img.onerror = () => {
         console.log("uff (png)");
         img.src = `./assets/${project.Folder}/cover.gif`;
