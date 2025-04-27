@@ -378,7 +378,10 @@
         "type": "image-group",
         "images": ["1a.mp4", "1b.webp"],
         "layout": "side-by-side",
-        "height": 50
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
         "type": "image",
@@ -394,7 +397,10 @@
         "type": "image-group",
         "images": ["4a.webp", "4b.mp4"],
         "layout": "side-by-side",
-        "height": 50
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       }
     ]
   },
