@@ -152,32 +152,30 @@ function createGalleryItem(media, folderName) {
     }
 
     let isPlaying = false;
-
-    video.addEventListener("loadeddata", () => {
-      if (!video.autoplay) {
+    if (!video.autoplay) {
+      video.addEventListener("loadeddata", () => {
         video.currentTime = 1;
         video.pause();
         video.classList.add("controls");
-      }
-    });
+      });
 
-    video.addEventListener("click", () => {
-      if (isPlaying) {
-        video.pause();
-        isPlaying = false;
-      } else {
-        video.play().then(() => {
-          isPlaying = true;
-          video.controls = true;
+      video.addEventListener("click", () => {
+        if (isPlaying) {
+          video.pause();
+          isPlaying = false;
+        } else {
+          video.play().then(() => {
+            isPlaying = true;
+            video.controls = true;
 
-          // Riattiva audio solo se non è in autoplay
-          if (!video.autoplay) {
-            video.muted = false;
-          }
-        });
-      }
-    });
-
+            // Riattiva audio solo se non è in autoplay
+            if (!video.autoplay) {
+              video.muted = false;
+            }
+          });
+        }
+      });
+    }
     container.appendChild(video);
   }
 
