@@ -8,7 +8,7 @@
 .proj-el {
   display: flex;
   flex-direction: column;
-  padding: 0 2.75vw;
+  padding: 0 1.75vw;
   gap: 1vh;
   line-height: 1.25rem;
 }
@@ -75,16 +75,22 @@
   gap: 0.75rem;
   padding: 0.75rem;
   box-sizing: border-box;
-  flex-grow: 1 1 0;
 }
 
 .side-by-side > img,
 .side-by-side > video {
   min-width: 0;
   object-fit: cover;
+  flex: 1;
 }
 
 /* ////////////////// */
+
+@media screen and (max-width: 1024px) {
+  .proj-el {
+    padding: 0 2.75vw;
+  }
+}
 
 @media screen and (max-width: 768px) {
   #proj-container {
@@ -104,7 +110,7 @@
 
   /* Gallery */
   .gallery-item.contain {
-    height: 50vh;
+    height: auto;
   }
   .gallery-item.contain:has(video) {
     height: 80vh;

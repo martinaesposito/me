@@ -569,7 +569,10 @@
         "type": "image-group",
         "images": ["0a.png", "0b.mp4"],
         "layout": "side-by-side",
-        "height": 50
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
         "type": "image",
@@ -604,7 +607,49 @@
     "Fields": "Branding",
     "Team": "Chiara Mazzeo <br>Cecilia Pizzagalli <br>Andrea Borsato <br>Anita Ruggiu",
     "Context": "Design Studio, Bachelor in Communication Design, Politecnico di Milano",
-    "Video": "https://youtu.be/-qArg6bRqs0"
+    "Video": "https://youtu.be/-qArg6bRqs0",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "full"
+      },
+      {
+        "type": "video",
+        "src": "2.mp4",
+        "layout": "full",
+        "autoplay": false,
+        "muted": false,
+        "controls": false
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "full"
+      },
+      {
+        "type": "image-group",
+        "images": ["6a.png", "6b.png"],
+        "layout": "side-by-side",
+        "height": 50
+      }
+    ]
   },
   {
     "Folder": "design-your-way",
@@ -614,7 +659,69 @@
     "Descrizione": "An interactive guide for non-designers explaining the design principles behind a wayfinding system. Despite the amount of information, the book isn’t a theoretical manual and asks the reader to parti- cipate actively. The readers start from the first chapter, in which the design principles are explained and then navigate through the other pages to learn and observe how they are applied to some real cases. While navigating the book, they must also attach the stickers of the design principles best displayed by the example in the proper spaces at the corner of the pages. To prove the effectiveness of street signs in conditions of rough visibility, sheets simulating weather conditions, such as fog or darkness, are placed at the end of the book. When the readers encounter those particular examples they can insert the cards in the appropriate pockets and confirm their effectiveness.",
     "Fields": "Editorial design",
     "Team": "Andrea Borsato <br>Anita Ruggiu",
-    "Context": "Studio of design fundamentals, Bachelor in Communication Design, Politecnico di Milano"
+    "Context": "Studio of design fundamentals, Bachelor in Communication Design, Politecnico di Milano",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "1.gif",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "3.gif",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "5.gif",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "6.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "7.gif",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "8.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "9.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "10.png",
+        "layout": "contain",
+        "height": 50
+      }
+    ]
   },
   {
     "Folder": "calendario",
@@ -624,6 +731,56 @@
     "Descrizione": "A series of twelve illustrations realized for the 2022 calendar. Each month is presented as a still life of a table at breakfast time, returning the feeling of that particular period of the year by combining seasonal food with different lights and shades of color. Though the habit of breakfast hasn’t got anything artistic in itself, it can become a moment of care and beauty to start the day in a different mood. For this project, I was interviewed by an Italian magazine of illustration called Brillo.",
     "Fields": "Illustration",
     "Team": "",
-    "Context": "Personal project"
+    "Context": "Personal project",
+    "Media": [
+      {
+        "type": "image",
+        "src": "0.png",
+        "layout": "full"
+      },
+      {
+        "type": "image",
+        "src": "1.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "2.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "3.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "4.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "5.png",
+        "layout": "contain",
+        "height": 50
+      },
+      {
+        "type": "image",
+        "src": "6.png",
+        "layout": "contain",
+        "height": 50
+      },
+
+      {
+        "type": "image",
+        "src": "7.png",
+        "layout": "contain",
+        "height": 50
+      }
+    ]
   }
 ]
