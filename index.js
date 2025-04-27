@@ -56,9 +56,10 @@ async function generateProjects(url) {
           video.playsInline = true;
           video.controls = false;
           video.src = `./assets/${project.Folder}/cover.mp4`;
-
+          if (project.Poster) {
+            video.poster = `./assets/${project.Folder}/${project.Poster}`;
+          }
           video.oncanplay = () => {
-            // Inserisci il video prima degli altri elementi
             projDiv.insertBefore(video, projDiv.firstChild);
           };
 
@@ -66,9 +67,6 @@ async function generateProjects(url) {
             // console.log("uff (mp4)");
             video.remove();
           };
-
-          // append subito, altrimenti `oncanplay` non parte
-          projDiv.insertBefore(video, projDiv.firstChild);
         };
       };
 

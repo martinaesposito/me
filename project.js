@@ -150,6 +150,10 @@ function createGalleryItem(media, folderName) {
       video.loop = true;
       video.classList.add("autoplay");
     }
+    // poster
+    if (media.poster) {
+      video.poster = `./assets/${folderName}/${media.poster}`;
+    }
 
     let isPlaying = false;
     if (!video.autoplay) {

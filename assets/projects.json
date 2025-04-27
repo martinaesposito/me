@@ -12,6 +12,7 @@
       {
         "type": "video",
         "src": "0.mp4",
+        "poster": "0_poster.webp",
         "layout": "full",
         "autoplay": true,
         "muted": true,
