@@ -57,6 +57,7 @@ async function generateProjects(url) {
           video.controls = false;
           video.src = `./assets/${project.Folder}/cover.mp4`;
           video.poster = `./assets/${project.Folder}/cover_poster.webp`;
+          console.log(video.poster);
           video.oncanplay = () => {
             projDiv.insertBefore(video, projDiv.firstChild);
           };
@@ -105,7 +106,7 @@ async function generateProjects(url) {
     }
   });
 
-  console.log(fullContainer, col1, col2, col3);
+  // console.log(fullContainer, col1, col2, col3);
 }
 
 function setupSwitch() {
