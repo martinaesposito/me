@@ -32,6 +32,7 @@
 
 /* GALLERY  */
 .gallery-item {
+  position: relative;
   width: 100vw;
   background-color: white;
 }
@@ -86,6 +87,22 @@
   min-width: 0;
   object-fit: cover;
   flex: 1;
+}
+
+.pVideoInstructions {
+  color: white;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.shadow {
+  -webkit-text-stroke: 4px black;
+  z-index: 4;
 }
 
 /* ////////////////// */

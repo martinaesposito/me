@@ -153,6 +153,17 @@ function createGalleryItem(media, folderName) {
 
     let isPlaying = false;
     if (!video.autoplay) {
+      const pIns_shadow = document.createElement("p");
+      const pIns = document.createElement("p");
+      // instructions
+      pIns_shadow.innerHTML = "[ Click to play the video ]";
+      pIns.innerHTML = "[ Click to play the video ]";
+      pIns_shadow.classList.add("pVideoInstructions");
+      pIns_shadow.classList.add("shadow");
+      pIns.classList.add("pVideoInstructions");
+      container.appendChild(pIns_shadow);
+      container.appendChild(pIns);
+
       video.addEventListener("loadeddata", () => {
         video.currentTime = 1;
         video.pause();
@@ -165,6 +176,8 @@ function createGalleryItem(media, folderName) {
           isPlaying = false;
         } else {
           video.play().then(() => {
+            pIns.remove();
+            pIns_shadow.remove();
             isPlaying = true;
             video.controls = true;
 

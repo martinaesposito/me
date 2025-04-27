@@ -41,11 +41,11 @@ async function generateProjects(url) {
 
       img.src = `./assets/${project.Folder}/cover.webp`;
       img.onerror = () => {
-        console.log("uff (png)");
+        // console.log("uff (png)");
         img.src = `./assets/${project.Folder}/cover.gif`;
 
         img.onerror = () => {
-          console.log("uff (gif)");
+          // console.log("uff (gif)");
           img.remove();
 
           const video = document.createElement("video");
@@ -63,7 +63,7 @@ async function generateProjects(url) {
           };
 
           video.onerror = () => {
-            console.log("uff (mp4)");
+            // console.log("uff (mp4)");
             video.remove();
           };
 
