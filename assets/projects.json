@@ -225,7 +225,7 @@
     "Cover": "full",
     "Anno": "2024",
     "Nome": "Waggle",
-    "Descrizione": "An app to ‘collect’ the dogs that you meet during your daily walk in the Dog Area in Parco Sempione, encouraging socialisation and education <br>between dog-owners.The app allows you to create a card of your four-legged friend and share it with other dog owners. ",
+    "Descrizione": "An app to ‘collect’ the dogs that you meet during your daily walk in the Dog Area in Parco Sempione, encouraging socialisation and education <br>between dog-owners.The app allows you to create a card of your four-legged friend and share it with other dog owners. </br>Visit the <a href='https://github.com/martinaesposito/03-WAGGLE'>github repository</a> for the source code or test the experience on the <a href='https://waggle.onrender.com'>demo website</a> !",
     "Fields": "Creative coding",
     "Team": "Andrea Brolatti<br>Marco Convento<br>Anita Ruggiu",
     "Context": "Interaction Studio C2, Master in Communication Design, Politecnico di Milano",
