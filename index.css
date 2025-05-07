@@ -26,6 +26,7 @@
   align-items: center;
   max-height: 100vh;
   padding-bottom: 3.5vh;
+  cursor: pointer;
 }
 
 .img-cover {

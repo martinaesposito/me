@@ -9,6 +9,36 @@ let coolors = [
   "#4251D6",
 ];
 
+// console.log(coolors);
+// document.addEventListener("DOMContentLoaded", () => {
+//   linkColor();
+// });
+
+/////////////////////////////////////////////////////////////////
+function linkColor() {
+  const links = document.querySelectorAll("a");
+  console.log(links);
+  links.forEach((link) => {
+    if (link.classList.contains("nav")) {
+    } else {
+      // Verifica se il link ha la classe "nav"
+      link.addEventListener("mouseenter", () => {
+        console.log("link");
+        const randomColor = coolors[Math.floor(Math.random() * coolors.length)];
+        console.log(randomColor);
+        link.style.color = randomColor;
+      });
+
+      link.addEventListener("mouseleave", () => {
+        // if (link.classList.contains("nav")) {
+        // link.style.color = "white"; // Colore originale
+        // }
+        link.style.color = "black"; // Colore originale
+      });
+    }
+  });
+}
+
 //////
 
 // function updateSelectionColor() {
@@ -55,27 +85,3 @@ let coolors = [
 //     updateSelectionColor();
 //   }
 // });
-
-/////////////////////////////////////////////////////////////////
-function linkColor() {
-  const links = document.querySelectorAll("a");
-  console.log(links);
-  links.forEach((link) => {
-    if (link.classList.contains("nav")) {
-    } else {
-      // Verifica se il link ha la classe "nav"
-      link.addEventListener("mouseenter", () => {
-        const randomColor = coolors[Math.floor(Math.random() * coolors.length)];
-        console.log(randomColor);
-        link.style.color = randomColor;
-      });
-
-      link.addEventListener("mouseleave", () => {
-        // if (link.classList.contains("nav")) {
-        // link.style.color = "white"; // Colore originale
-        // }
-        link.style.color = "black"; // Colore originale
-      });
-    }
-  });
-}

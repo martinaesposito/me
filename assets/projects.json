@@ -4,7 +4,7 @@
     "Cover": "large",
     "Anno": "2024",
     "Nome": "Interdependence",
-    "Descrizione": "An initiative organised by the Polimi Design System for Fuorisalone 2024 to reflect on the role of relationships and connections in contemporary society through a selection of design student projects.<br>The event took place in three locations in the city of Milan: Fabbrica del Vapore, Campus Bovisa Durando and Salone Satellite. The main venue was Fabbrica del Vapore, where more than 50 international schools presented their projects. At the same location, a series of talks and presentations took place throughout the week, which ended with a performance by Campo Teatrale.<br>I was responsible for the art direction of the entire exhibition: I designed the initiative's visual identity and coordinated its application across various artifacts, from project panels to the website and social media. The key visual was developed in code using P5.js, a Javascript library designed to make creative coding easy and accessible.",
+    "Descrizione": "An initiative organised by the Polimi Design System for Fuorisalone 2024 to reflect on the role of relationships and connections in contemporary society through a selection of design student projects.<br>The event took place in three locations in the city of Milan: Fabbrica del Vapore, Campus Bovisa Durando and Salone Satellite. The main venue was Fabbrica del Vapore, where more than 50 international schools presented their projects. At the same location, a series of talks and presentations took place throughout the week, which ended with a performance by Campo Teatrale.<br>I was responsible for the art direction of the entire exhibition: I designed the initiative's visual identity and coordinated its application across various artifacts, from project panels to the website and social media. The key visual was developed in code using P5.js, a Javascript library designed to make creative coding easy and accessible. <a href='https://www.interdependence.polimi.it/'>Visit the website</a> to learn more.",
     "Fields": "Art direction",
     "Team": "Carlo Morgan Capobianco <br>Petra Bachiorrini <br>Zihan Li <br>Anita Ruggiu <br>Andrea Borsato <br>Sarah Cosentino <br>Debora Baratta <br>Matteo Zoppellaro <br>Andrea Brolatti <br>Diego Reggiani <br>Riccardo Zerbi",
     "Context": "Politecnico di Milano x Fuorisalone 2024",
@@ -82,7 +82,7 @@
     "Cover": "full",
     "Anno": "2024",
     "Nome": "Handling parakeets",
-    "Descrizione": "An interactive experience narrating the relationship between humans and parakeets in the online market through the symbolic element of the hand.<br>The project consists of an interactive installation that highlights the central role of humans in the presence of monk and ring-necked parakeets in Italian cities. Native to South America, these non-migratory birds were imported as pets due to their exotic charm. Some escaped captivity, forming urban colonies, while human demand fueled an online trade that continues today.<br>To investigate this phenomenon, 885 listings from 15 online platforms—including Facebook, Telegram, and Subito.it—were analyzed between November 1st and 5th, 2024. Among them, 114 listings featured photographs where, in addition to the parakeets for sale, human figures were visible through the presence of a hand.These listings were grouped into seven collections based on how the hand interacts with the parakeet. By comparing the images with their descriptions, the study explores the significance of these interactions, revealing how the birds are perceived and treated. The hand thus becomes the key symbol of the project, embodying the complex relationship between humans and parakeets. In the interactive experience, users can explore these collections and engage directly with the data through the movement of their own hand.<br>The experience consists of a web application built using three.js, and the Mediapipe Hand Landmark detection algorithm, a machine-learning solution developed by Google for hand recognition.<br>The project was showcased in a two-week exhibition at the MEET Digital Culture Centre in Milan.",
+    "Descrizione": "An interactive experience narrating the relationship between humans and parakeets in the online market through the symbolic element of the hand.<br>The project consists of an interactive installation that highlights the central role of humans in the presence of monk and ring-necked parakeets in Italian cities. Native to South America, these non-migratory birds were imported as pets due to their exotic charm. Some escaped captivity, forming urban colonies, while human demand fueled an online trade that continues today.<br>To investigate this phenomenon, 885 listings from 15 online platforms—including Facebook, Telegram, and Subito.it—were analyzed between November 1st and 5th, 2024. Among them, 114 listings featured photographs where, in addition to the parakeets for sale, human figures were visible through the presence of a hand.These listings were grouped into seven collections based on how the hand interacts with the parakeet. By comparing the images with their descriptions, the study explores the significance of these interactions, revealing how the birds are perceived and treated. The hand thus becomes the key symbol of the project, embodying the complex relationship between humans and parakeets. In the interactive experience, users can explore these collections and engage directly with the data through the movement of their own hand.<br>The experience consists of a web application built using three.js, and the Mediapipe Hand Landmark detection algorithm, a machine-learning solution developed by Google for hand recognition.<br>The project was showcased in a two-week exhibition entitled <a href0'https://liked-trapped-shared.densitydesign.org/en' >Liked Trapped Shared at the MEET Digital Culture Centre in Milan.</a>",
     "Fields": "Data visualization, creative coding",
     "Team": "Giulia Grassi<br>Ming Hu<br>Nausicaa Naibo<br>Fabio Pennone<br>Anita Ruggiu",
     "Context": "Final Synthesis Studio, Master in Communication Design, Politecnico di Milano",
@@ -135,7 +135,7 @@
     "Cover": "contain",
     "Anno": "2024",
     "Nome": "INATTO",
-    "Descrizione": "The magazine title is the legislation while each issue is a new right, legitimized through the words of the people who contributed to the creation magazine itself. The magazine aims to be a place for dialogue between different points of view, with the purpose of questioning those taboos that prevent the creative system from evolving.",
+    "Descrizione": "An indipendent magazine written by creatives for creatives with the aim of opening a discussion on the needs of those who belong to the field.</br> Rights, indeed, are not only those recognized by law. Often we behave as if we had permission to act in a certain way, even if formally that right does not exist. The collaboration between multiple individuals, even when involuntary, confers on those behaviors the legitimacy that authorities do not recognize. Lying, destroying, failing, forgetting, copying. Are these wrong behaviors, or is it our perception that is wrong?</br>The magazine is law while each issue is a new right, legitimized through the words of the people who contributed to the creation magazine itself. The magazine aims to be a place for dialogue between different points of view, with the purpose of questioning those taboos that prevent the creative system from evolving. </br>Each issue contains a gallery of artworks donated by several artists that decide to contibute to the issue of the magazine.</br>Visit <a href='https://inattomag.it/index.html'>the website</a> with the open-source artworks to discover those of the first isue, 'The right to Copy'.",
     "Fields": "Editorial design",
     "Team": "Miguel Amaya<br>Ginevra Bernasconi <br>Giulia Bonalumi <br>Federico Gajo <br>Camilla Tosi",
     "Context": "Complex artifacts studio, Bachelor in Communication Design, Politecnico di Milano",
@@ -235,17 +235,18 @@
         "src": "0.webp",
         "layout": "full"
       },
+
       {
-        "type": "image",
-        "src": "1.webp",
-        "layout": "contain",
+        "type": "image-group",
+        "images": ["1a.webp", "1b.webp"],
+        "layout": "side-by-side-contain",
         "height": 100
       },
       {
-        "type": "image-group",
-        "images": ["2a.webp", "2b.webp"],
-        "layout": "side-by-side",
-        "height": 30
+        "type": "image",
+        "src": "2.webp",
+        "layout": "full",
+        "height": 100
       },
       {
         "type": "image",
@@ -259,19 +260,31 @@
         "height": 50
       },
       {
-        "type": "image",
-        "src": "5.webp",
-        "layout": "contain"
+        "type": "video",
+        "src": "5.mp4",
+        "layout": "contain",
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
-        "type": "image",
-        "src": "6.webp",
-        "layout": "contain"
+        "type": "image-group",
+        "images": ["6a.mp4", "6b.mp4"],
+        "layout": "side-by-side-contain",
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
-        "type": "image",
-        "src": "7.webp",
-        "layout": "contain"
+        "type": "video",
+        "src": "7.mp4",
+        "layout": "contain",
+        "height": 50,
+        "autoplay": true,
+        "muted": true,
+        "controls": false
       },
       {
         "type": "image",
@@ -448,7 +461,7 @@
       },
       {
         "type": "image",
-        "src": "6.jpg",
+        "src": "6.webp",
         "layout": "full"
       },
       {

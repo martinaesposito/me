@@ -29,6 +29,9 @@
   max-width: 75%;
   gap: 3vh;
 }
+#descrizione {
+  display: block;
+}
 
 /* GALLERY  */
 .gallery-item {
@@ -88,6 +91,10 @@
   object-fit: cover;
   flex: 1;
 }
+.side-by-side-contain > img,
+.side-by-side-contain > video {
+  object-fit: contain !important;
+}
 
 .pVideoInstructions {
   color: white;
@@ -133,9 +140,9 @@
   .gallery-item.contain {
     height: auto;
   }
-  .gallery-item.contain:has(video) {
+  /* .gallery-item.contain:has(video) {
     height: 80vh;
-  }
+  } */
   .gallery-item.contain:has(.h-100) {
     height: 80vh;
   }

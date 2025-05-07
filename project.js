@@ -56,6 +56,7 @@ async function loadProjectDetails() {
   //DESCRIPTION
   if (currentProject.Descrizione && currentProject.Descrizione.trim() !== "") {
     projDescription.innerHTML = currentProject.Descrizione;
+    linkColor();
   } else {
     projDescription.style.display = "none";
   }
@@ -153,6 +154,10 @@ function createGalleryItem(media, folderName) {
     // poster
     if (media.poster) {
       video.poster = `./assets/${folderName}/${media.poster}`;
+    }
+
+    if (media.layout === "contain") {
+      if (media.height) video.classList.add(`h-${media.height}`);
     }
 
     let isPlaying = false;
