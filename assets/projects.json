@@ -287,8 +287,16 @@
         "controls": false
       },
       {
+        "type": "image-group",
+        "images": ["8a.mp4", "8b.mp4"],
+        "layout": "side-by-side",
+        "autoplay": true,
+        "muted": true,
+        "controls": false
+      },
+      {
         "type": "image",
-        "src": "8.webp",
+        "src": "9.webp",
         "layout": "contain"
       }
     ]
