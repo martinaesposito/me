@@ -14,9 +14,6 @@
 }
 
 /* ELEMENTS */
-#proj-title-descr {
-  max-width: 90%;
-}
 #proj-title {
   line-height: 3rem;
   font-size: 2.5rem;
@@ -31,6 +28,7 @@
 }
 #descrizione {
   display: block;
+  max-width: 92%;
 }
 
 /* GALLERY  */

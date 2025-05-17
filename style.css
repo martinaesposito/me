@@ -118,7 +118,7 @@ i {
 @media screen and (max-width: 768px) {
   html,
   body {
-    font-size: 18px;
+    font-size: 16px;
     overscroll-behavior: none;
   }
   .nav {
