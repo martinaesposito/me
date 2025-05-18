@@ -73,6 +73,7 @@
   flex-direction: row;
   position: fixed;
   bottom: 0;
+  cursor: pointer;
 }
 
 .selected {
