@@ -590,8 +590,8 @@
     "Nome": "Craftwork",
     "Descrizione": "Web design and visual effect for the website of a research project by the Department of Social and Political Sciences of the University of Milan.</br>The project is a multi-methodological investigation into the relationship between identity and “new forms of work” in the digital era, exploring how technological transformation is reshaping professional life across various sectors and geographic contexts within the EU. Visit the <a href='https://craftwork.unimi.it/'>website</a> to learn more about the research.</br></br>In addition to designing and developing the website, I created a custom image-processing tool that simulates a Risograph printing effect, bringing a distinctive editorial quality to the project’s visual identity. The <a href='https://github.com/martinaesposito/TOOL-RISO'>tool</a> was developed using the P5.riso library and is freely accessible for everyone to use.",
     "Fields": "Creative coding",
-    "Team": "",
-    "Context": "Andrea Benedetti",
+    "Team": "Andrea Benedetti",
+    "Context": "Density Design Lab",
     "Media": [
       {
         "type": "image-group",
