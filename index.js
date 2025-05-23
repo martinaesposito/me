@@ -58,9 +58,7 @@ async function generateProjects(url) {
           video.src = `./assets/${project.Folder}/cover.mp4`;
           video.poster = `./assets/${project.Folder}/cover_poster.webp`;
           console.log(video.poster);
-          video.oncanplay = () => {
-            projDiv.insertBefore(video, projDiv.firstChild);
-          };
+          projDiv.insertBefore(video, projDiv.firstChild);
 
           video.onerror = () => {
             // console.log("uff (mp4)");
