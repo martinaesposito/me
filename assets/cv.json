@@ -63,6 +63,24 @@
     "Luogo": "",
     "Year": "2022"
   },
+
+  {
+    "Sezione": "Teaching activities",
+    "Nome": "Workshop – Generative Posters",
+    "Link": "",
+    "Ruolo": "Lecturer",
+    "Luogo": "TOOLS!– ADI Design Museum",
+    "Year": "2025"
+  },
+
+  {
+    "Sezione": "Teaching activities",
+    "Nome": "Symposium on Antidisciplinary",
+    "Link": "https://www.transmediaresearch.institute/program.html",
+    "Ruolo": "Lecturer",
+    "Luogo": "Politecnico di Milano",
+    "Year": "2025"
+  },
   {
     "Sezione": "Teaching activities",
     "Nome": "Workshop – AIAP Microstories",
@@ -74,7 +92,7 @@
   {
     "Sezione": "Teaching activities",
     "Nome": "DMI Winter School 2025",
-    "Link": "",
+    "Link": "https://wiki.digitalmethods.net/Dmi/WinterSchool2025",
     "Ruolo": "Facilitator",
     "Luogo": "Universiteit van Amsterdam",
     "Year": "2025"
@@ -111,9 +129,18 @@
     "Luogo": "SPRINT",
     "Year": "2023"
   },
+
   {
     "Sezione": "Academic publications",
-    "Nome": "Guida, F. E., & Esposito, M. (2024). <i>Anthropogenic Narratives: Communicating and Experiencing Non-Human Perspectives.</i> </br> Paper presented at Cumulus Budapest, Hungary, 15 – 17 May 2024.",
+    "Nome": "Guida, F. E., Esposito, M., Isidori, E. & Tranti, C. (2025). <i>Conspiracy Fiction as a Tool for Critical Thinking: Designing Narratives to Reflect on the Contemporary Information System</i> </br> Paper presented at Cumulus Nantes, France, 3 – 7 June 2025.",
+    "Link": "",
+    "Ruolo": "",
+    "Luogo": "",
+    "Year": "2025"
+  },
+  {
+    "Sezione": "Academic publications",
+    "Nome": "Guida, F. E., & Esposito, M. (2024). <a href='https://discovery.mome.hu/hu/record/-/record/MOMEIZUP8898' style='font-style italic'>Anthropogenic Narratives: Communicating and Experiencing Non-Human Perspectives.</a> </br> Paper presented at Cumulus Budapest, Hungary, 15 – 17 May 2024.",
     "Link": "",
     "Ruolo": "",
     "Luogo": "",
@@ -126,6 +153,15 @@
     "Ruolo": "",
     "Luogo": "",
     "Year": "2024"
+  },
+
+  {
+    "Sezione": "Press and mentions",
+    "Nome": "Anthropogenic Scenarios",
+    "Link": "https://www.interdependence.polimi.it/salonesatellite/",
+    "Ruolo": "Exhibition",
+    "Luogo": "Salone Satellite",
+    "Year": "2025"
   },
   {
     "Sezione": "Press and mentions",

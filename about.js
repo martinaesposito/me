@@ -1553,9 +1553,7 @@ let allText = document.querySelectorAll(".selfp"); //prendo tutti i paragrafi de
 
 allText.forEach((txt) => {
   let strTxt = txt.textContent; // prendo il contenuto del testo
-
   let words = strTxt.split(" ");
-
   txt.textContent = ""; // Svuoto il contenuto del testo
 
   words.forEach((word) => {
@@ -1579,8 +1577,6 @@ allText.forEach((txt) => {
     space.innerHTML = "&nbsp;";
     wordSpan.appendChild(space);
 
-    // console.log(wordSpan);
-
     txt.appendChild(wordSpan);
   });
 });
@@ -1602,9 +1598,65 @@ function generateRandomNumber() {
   return newN;
 }
 
+////////////////////////////
+
+//animazione delle lettere dopo 7,5 sec di inattività
+let lastInteraction = Date.now(); // timestamp aggiornato a ogni movimento
+let idleCheckInterval;
+
+idleCheckInterval = setInterval(() => {
+  if (Date.now() - lastInteraction > 7500) {
+    animateRandomLetters(floor(random(4, 16))); // ne muove 2
+    lastInteraction = Date.now();
+  }
+}, 500);
+
+function animateRandomLetters(count) {
+  if (!snglLet || snglLet.length === 0) return;
+
+  let animated = 0;
+  while (animated < count) {
+    let groupSize = Math.floor(random(2, 5)); // gruppi da 2 a 4
+    if (animated + groupSize > count) groupSize = count - animated;
+
+    setTimeout(() => {
+      for (let j = 0; j < groupSize; j++) {
+        let l = snglLet[Math.floor(Math.random() * snglLet.length)];
+        let n = generateRandomNumber();
+
+        if (n == 1) {
+          l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
+          l.style.display = "inline-block";
+          l.style.transform = `translate(${Math.floor(
+            Math.random() * 40 - 20
+          )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
+
+          setTimeout(() => {
+            l.style.transform = "translate(0, 0)";
+            l.style.color = "";
+          }, 1000);
+        } else if (n == 2) {
+          let origC = l.dataset.origC || l.innerHTML;
+          l.dataset.origC = origC;
+          l.innerHTML =
+            filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
+
+          setTimeout(() => {
+            l.innerHTML = l.dataset.origC;
+          }, 1000);
+        }
+      }
+    }, animated * random(80, 200)); // delay irregolare tra i gruppi
+
+    animated += groupSize;
+  }
+}
+
 //APPLICO I DIVERSI EFFETTI ALLE LETTERE
+//DESKTOP
 snglLet.forEach((l) => {
   l.addEventListener("mouseover", () => {
+    lastInteraction = Date.now();
     let n = generateRandomNumber();
     // console.log(n);
     if (n == 1) {
@@ -1640,7 +1692,8 @@ snglLet.forEach((l) => {
   });
 });
 
-//creo una canva di p5 in background così da poter adoperare la posizione del mouse rispetto alla canva per far muovere le
+//MOBILE
+// creo una canva di p5 in background così da poter adoperare la posizione del mouse rispetto alla canva per far muovere le lettere
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background("white");
@@ -1648,12 +1701,12 @@ function setup() {
 
 function touchMoved() {
   touchPos = { x: mouseX, y: mouseY };
-  //console.log(touchPos);
 }
 
 let touchPos;
 
 document.addEventListener("touchmove", (e) => {
+  lastInteraction = Date.now();
   snglLet.forEach((l) => {
     const elPos = l.getBoundingClientRect(); // calcolo la posizione dell'elemento
     const distx = Math.abs(Math.floor(touchPos.x - elPos.x)); // distanza x rispetto alla posizione del touch
