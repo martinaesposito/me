@@ -1600,12 +1600,12 @@ function generateRandomNumber() {
 
 ////////////////////////////
 
-//animazione delle lettere dopo 7,5 sec di inattività
+//animazione delle lettere dopo 190 sec di inattività
 let lastInteraction = Date.now(); // timestamp aggiornato a ogni movimento
 let idleCheckInterval;
 
 idleCheckInterval = setInterval(() => {
-  if (Date.now() - lastInteraction > 7500) {
+  if (Date.now() - lastInteraction > 10000) {
     let group = floor(random(6, 18));
     console.log(group);
     animateRandomLetters(group); // ne muove 2
