@@ -1606,7 +1606,9 @@ let idleCheckInterval;
 
 idleCheckInterval = setInterval(() => {
   if (Date.now() - lastInteraction > 7500) {
-    animateRandomLetters(floor(random(4, 16))); // ne muove 2
+    let group = floor(random(6, 18));
+    console.log(group);
+    animateRandomLetters(group); // ne muove 2
     lastInteraction = Date.now();
   }
 }, 500);
@@ -1639,7 +1641,7 @@ function animateRandomLetters(count) {
           l.innerHTML = l.dataset.origC;
         }, 1000);
       }
-    }, j * random(0, 200)); // delay irregolare tra i gruppi
+    }, j * random(0, 200)); // delay irregolare tra le lettere
   }
 }
 
