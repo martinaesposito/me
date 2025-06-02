@@ -1613,42 +1613,33 @@ idleCheckInterval = setInterval(() => {
 
 function animateRandomLetters(count) {
   if (!snglLet || snglLet.length === 0) return;
-
-  let animated = 0;
-  while (animated < count) {
-    let groupSize = Math.floor(random(2, 5)); // gruppi da 2 a 4
-    if (animated + groupSize > count) groupSize = count - animated;
-
+  for (let j = 0; j < count; j++) {
     setTimeout(() => {
-      for (let j = 0; j < groupSize; j++) {
-        let l = snglLet[Math.floor(Math.random() * snglLet.length)];
-        let n = generateRandomNumber();
+      let l = snglLet[Math.floor(Math.random() * snglLet.length)];
+      let n = generateRandomNumber();
 
-        if (n == 1) {
-          l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
-          l.style.display = "inline-block";
-          l.style.transform = `translate(${Math.floor(
-            Math.random() * 40 - 20
-          )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
+      if (n == 1) {
+        l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
+        l.style.display = "inline-block";
+        l.style.transform = `translate(${Math.floor(
+          Math.random() * 40 - 20
+        )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
 
-          setTimeout(() => {
-            l.style.transform = "translate(0, 0)";
-            l.style.color = "";
-          }, 1000);
-        } else if (n == 2) {
-          let origC = l.dataset.origC || l.innerHTML;
-          l.dataset.origC = origC;
-          l.innerHTML =
-            filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
+        setTimeout(() => {
+          l.style.transform = "translate(0, 0)";
+          l.style.color = "";
+        }, 1000);
+      } else if (n == 2) {
+        let origC = l.dataset.origC || l.innerHTML;
+        l.dataset.origC = origC;
+        l.innerHTML =
+          filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
 
-          setTimeout(() => {
-            l.innerHTML = l.dataset.origC;
-          }, 1000);
-        }
+        setTimeout(() => {
+          l.innerHTML = l.dataset.origC;
+        }, 1000);
       }
-    }, animated * random(80, 200)); // delay irregolare tra i gruppi
-
-    animated += groupSize;
+    }, j * random(0, 200)); // delay irregolare tra i gruppi
   }
 }
 
