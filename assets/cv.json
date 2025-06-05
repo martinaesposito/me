@@ -132,7 +132,7 @@
 
   {
     "Sezione": "Academic publications",
-    "Nome": "Guida, F. E., Esposito, M., Isidori, E. & Tranti, C. (2025). <i>Conspiracy Fiction as a Tool for Critical Thinking: Designing Narratives to Reflect on the Contemporary Information System./i> Paper presented at Cumulus Nantes, France, 3 – 7 June 2025.",
+    "Nome": "Guida, F. E., Esposito, M., Isidori, E. & Tranti, C. (2025). <i>Conspiracy Fiction as a Tool for Critical Thinking: Designing Narratives to Reflect on the Contemporary Information System.</i> Paper presented at Cumulus Nantes, France, 3 – 7 June 2025.",
     "Link": "",
     "Ruolo": "",
     "Luogo": "",
@@ -165,6 +165,14 @@
   },
   {
     "Sezione": "Press and mentions",
+    "Nome": "Liked, Trapped, Shared",
+    "Link": "https://liked-trapped-shared.densitydesign.org/en",
+    "Ruolo": "Exhibition",
+    "Luogo": "MEET Digital Culture Center",
+    "Year": "2025"
+  },
+  {
+    "Sezione": "Press and mentions",
     "Nome": "Anthropogenic Narratives",
     "Link": "https://anthropogenicnarratives.labsintesi-c1.info/",
     "Ruolo": "Exhibition",
@@ -173,7 +181,7 @@
   },
   {
     "Sezione": "Press and mentions",
-    "Nome": "La bellezza del quotidiano nelle illustrazioni di Martina Esposito",
+    "Nome": "<i>La bellezza del quotidiano nelle illustrazioni di Martina Esposito</i>",
     "Link": "https://brillomagazine.it/la-bellezza-del-quotidiano-nelle-illustrazioni-di-martina-esposito/?lang=it",
     "Ruolo": "Interview",
     "Luogo": "Brillo magazine",
@@ -230,7 +238,7 @@
   {
     "Sezione": "Workshops and courses",
     "Nome": "<i>Designing Futuring</i>, with Benedikt Groß and Eileen Mandir",
-    "Link": "",
+    "Link": "https://www.dotdotdot.it/conn/design-futuring-gross.php",
     "Ruolo": "",
     "Luogo": "Dotdotdot",
     "Year": "2024"
