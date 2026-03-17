@@ -32,7 +32,7 @@ async function loadProjectDetails() {
   }
   const projects = await fetchData("./assets/projects.json");
   const currentProject = projects.find(
-    (project) => project.Folder === folderName
+    (project) => project.Folder === folderName,
   );
   if (!currentProject) {
     console.error("Project not found:", folderName);

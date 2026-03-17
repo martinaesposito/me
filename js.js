@@ -17,15 +17,15 @@ let coolors = [
 /////////////////////////////////////////////////////////////////
 function linkColor() {
   const links = document.querySelectorAll("a");
-  console.log(links);
+  // console.log(links);
   links.forEach((link) => {
     if (link.classList.contains("nav")) {
     } else {
       // Verifica se il link ha la classe "nav"
       link.addEventListener("mouseenter", () => {
-        console.log("link");
+        // console.log("link");
         const randomColor = coolors[Math.floor(Math.random() * coolors.length)];
-        console.log(randomColor);
+        // console.log(randomColor);
         link.style.color = randomColor;
       });
 

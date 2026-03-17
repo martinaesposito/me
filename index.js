@@ -22,6 +22,7 @@ async function generateProjects(url) {
   const data = await fetchData(url);
 
   data.forEach((project, index) => {
+    console.log(project);
     // DIV PROGETTO
     const createProjectDiv = () => {
       const projDiv = document.createElement("div");

@@ -1607,7 +1607,7 @@ let idleCheckInterval;
 idleCheckInterval = setInterval(() => {
   if (Date.now() - lastInteraction > 10000) {
     let group = floor(random(6, 18));
-    console.log(group);
+    // console.log(group);
     animateRandomLetters(group); // ne muove 2
     lastInteraction = Date.now();
   }
@@ -1616,32 +1616,35 @@ idleCheckInterval = setInterval(() => {
 function animateRandomLetters(count) {
   if (!snglLet || snglLet.length === 0) return;
   for (let j = 0; j < count; j++) {
-    setTimeout(() => {
-      let l = snglLet[Math.floor(Math.random() * snglLet.length)];
-      let n = generateRandomNumber();
+    setTimeout(
+      () => {
+        let l = snglLet[Math.floor(Math.random() * snglLet.length)];
+        let n = generateRandomNumber();
 
-      if (n == 1) {
-        l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
-        l.style.display = "inline-block";
-        l.style.transform = `translate(${Math.floor(
-          Math.random() * 40 - 20
-        )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
+        if (n == 1) {
+          l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
+          l.style.display = "inline-block";
+          l.style.transform = `translate(${Math.floor(
+            Math.random() * 40 - 20,
+          )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
 
-        setTimeout(() => {
-          l.style.transform = "translate(0, 0)";
-          l.style.color = "";
-        }, 1000);
-      } else if (n == 2) {
-        let origC = l.dataset.origC || l.innerHTML;
-        l.dataset.origC = origC;
-        l.innerHTML =
-          filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
+          setTimeout(() => {
+            l.style.transform = "translate(0, 0)";
+            l.style.color = "";
+          }, 1000);
+        } else if (n == 2) {
+          let origC = l.dataset.origC || l.innerHTML;
+          l.dataset.origC = origC;
+          l.innerHTML =
+            filteredEmojis[Math.floor(Math.random() * filteredEmojis.length)];
 
-        setTimeout(() => {
-          l.innerHTML = l.dataset.origC;
-        }, 1000);
-      }
-    }, j * random(0, 200)); // delay irregolare tra le lettere
+          setTimeout(() => {
+            l.innerHTML = l.dataset.origC;
+          }, 1000);
+        }
+      },
+      j * random(0, 200),
+    ); // delay irregolare tra le lettere
   }
 }
 
@@ -1713,7 +1716,7 @@ document.addEventListener("touchmove", (e) => {
         l.style.color = cooolors[Math.floor(Math.random() * cooolors.length)];
         l.style.display = "inline-block";
         l.style.transform = `translate(${Math.floor(
-          Math.random() * 40 - 20
+          Math.random() * 40 - 20,
         )}px, ${Math.floor(Math.random() * 40 - 20)}px)`;
 
         // Lascia la trasformazione attiva per 1 secondo dopo la fine del tocco
